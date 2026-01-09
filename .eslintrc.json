@@ -1,5 +1,5 @@
 {
-    "extends": ["next/core-web-vitals", "@solana/eslint-config-solana"],
+    "extends": ["next/core-web-vitals", "@trezoa/eslint-config-trezoa"],
     "plugins": ["testing-library"],
     "overrides": [
         // Only uses Testing Library lint rules in test files

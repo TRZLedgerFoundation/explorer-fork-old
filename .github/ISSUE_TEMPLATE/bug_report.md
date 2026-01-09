@@ -19,7 +19,7 @@ Steps to reproduce the behavior:
 
 **Example Links**
 
--   [Please provide at least 1 link here](https://explorer.solana.com)
+-   [Please provide at least 1 link here](https://explorer.trezoa.com)
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
