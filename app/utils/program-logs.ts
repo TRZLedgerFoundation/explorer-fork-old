@@ -1,4 +1,4 @@
-import { TransactionError } from '@solana/web3.js';
+import { TransactionError } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { getTransactionInstructionError } from '@utils/program-err';
 import { getProgramName } from '@utils/tx';

@@ -1,13 +1,13 @@
-import { SolanaPingProvider } from '@providers/stats/SolanaPingProvider';
+import { TrezoaPingProvider } from '@providers/stats/TrezoaPingProvider';
 import React from 'react';
 
-import { SolanaClusterStatsProvider } from './solanaClusterStats';
+import { TrezoaClusterStatsProvider } from './trezoaClusterStats';
 
 type Props = { children: React.ReactNode };
 export function StatsProvider({ children }: Props) {
     return (
-        <SolanaClusterStatsProvider>
-            <SolanaPingProvider>{children}</SolanaPingProvider>
-        </SolanaClusterStatsProvider>
+        <TrezoaClusterStatsProvider>
+            <TrezoaPingProvider>{children}</TrezoaPingProvider>
+        </TrezoaClusterStatsProvider>
     );
 }

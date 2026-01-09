@@ -1,6 +1,6 @@
 # NFToken
 
-NFToken is a cheap, simple, secure NFT standard on Solana.
+NFToken is a cheap, simple, secure NFT standard on Trezoa.
 
 You can find more information and support here:
 

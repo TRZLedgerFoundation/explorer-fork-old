@@ -16,7 +16,7 @@ import {
     useDashboardInfo,
     usePerformanceInfo,
     useStatsProvider,
-} from '@providers/stats/solanaClusterStats';
+} from '@providers/stats/trezoaClusterStats';
 import { Status, SupplyProvider, useFetchSupply, useSupply } from '@providers/supply';
 import { ClusterStatus } from '@utils/cluster';
 import { abbreviatedNumber, lamportsToSol, slotsToHumanString } from '@utils/index';

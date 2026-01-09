@@ -1,4 +1,4 @@
-import { TransactionInstruction } from '@solana/web3.js';
+import { TransactionInstruction } from '@trezoa/web3.js';
 
 const PROGRAM_ID = 'AddressLookupTab1e1111111111111111111111111';
 

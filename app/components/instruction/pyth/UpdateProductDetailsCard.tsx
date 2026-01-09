@@ -1,6 +1,6 @@
 import { Address } from '@components/common/Address';
 import { Copyable } from '@components/common/Copyable';
-import { SignatureResult, TransactionInstruction } from '@solana/web3.js';
+import { SignatureResult, TransactionInstruction } from '@trezoa/web3.js';
 import React from 'react';
 
 import { InstructionCard } from '../InstructionCard';

@@ -4,7 +4,7 @@ import { AddressLookupTableAccountSection } from '@components/account/address-lo
 import { isAddressLookupTableAccount } from '@components/account/address-lookup-table/types';
 import { ConfigAccountSection } from '@components/account/ConfigAccountSection';
 import { FeatureAccountSection } from '@components/account/FeatureAccountSection';
-import { MetaplexNFTHeader } from '@components/account/MetaplexNFTHeader';
+import { TrezoaplexNFTHeader } from '@components/account/TrezoaplexNFTHeader';
 import { isNFTokenAccount, parseNFTokenCollectionAccount } from '@components/account/nftoken/isNFTokenAccount';
 import { NFTOKEN_ADDRESS } from '@components/account/nftoken/nftoken';
 import { NFTokenAccountHeader } from '@components/account/nftoken/NFTokenAccountHeader';
@@ -29,12 +29,12 @@ import {
     useMintAccountInfo,
 } from '@providers/accounts';
 import FLAGGED_ACCOUNTS_WARNING from '@providers/accounts/flagged-accounts';
-import isMetaplexNFT from '@providers/accounts/utils/isMetaplexNFT';
+import isTrezoaplexNFT from '@providers/accounts/utils/isTrezoaplexNFT';
 import { useAnchorProgram } from '@providers/anchor';
 import { CacheEntry, FetchStatus } from '@providers/cache';
 import { useCluster } from '@providers/cluster';
-import { PROGRAM_ID as ACCOUNT_COMPRESSION_ID } from '@solana/spl-account-compression';
-import { PublicKey } from '@solana/web3.js';
+import { PROGRAM_ID as ACCOUNT_COMPRESSION_ID } from '@trezoa/tpl-account-compression';
+import { PublicKey } from '@trezoa/web3.js';
 import { Cluster, ClusterStatus } from '@utils/cluster';
 import { FEATURE_PROGRAM_ID } from '@utils/parseFeatureAccount';
 import { useClusterPath } from '@utils/url';
@@ -70,14 +70,14 @@ const TABS_LOOKUP: { [id: string]: Tab[] } = {
             title: 'NFTs',
         },
     ],
-    'spl-account-compression': [
+    'tpl-account-compression': [
         {
             path: 'concurrent-merkle-tree',
             slug: 'concurrent-merkle-tree',
             title: 'Concurrent Merkle Tree',
         },
     ],
-    'spl-token-2022:mint': [
+    'tpl-token-2022:mint': [
         {
             path: 'transfers',
             slug: 'transfers',
@@ -89,7 +89,7 @@ const TABS_LOOKUP: { [id: string]: Tab[] } = {
             title: 'Instructions',
         },
     ],
-    'spl-token-2022:mint:metaplexNFT': [
+    'tpl-token-2022:mint:metaplexNFT': [
         {
             path: 'metadata',
             slug: 'metadata',
@@ -101,7 +101,7 @@ const TABS_LOOKUP: { [id: string]: Tab[] } = {
             title: 'Attributes',
         },
     ],
-    'spl-token:mint': [
+    'tpl-token:mint': [
         {
             path: 'transfers',
             slug: 'transfers',
@@ -113,7 +113,7 @@ const TABS_LOOKUP: { [id: string]: Tab[] } = {
             title: 'Instructions',
         },
     ],
-    'spl-token:mint:metaplexNFT': [
+    'tpl-token:mint:metaplexNFT': [
         {
             path: 'metadata',
             slug: 'metadata',
@@ -167,7 +167,7 @@ const TABS_LOOKUP: { [id: string]: Tab[] } = {
     ],
 };
 
-const TOKEN_TABS_HIDDEN = ['spl-token:mint', 'spl-token-2022:mint', 'config', 'vote', 'sysvar', 'config'];
+const TOKEN_TABS_HIDDEN = ['tpl-token:mint', 'tpl-token-2022:mint', 'config', 'vote', 'sysvar', 'config'];
 
 type Props = PropsWithChildren<{ params: { address: string } }>;
 
@@ -235,8 +235,8 @@ function AccountHeader({ address, account, tokenInfo, isTokenInfoLoading }: { ad
     const parsedData = account?.data.parsed;
     const isToken = parsedData && isTokenProgramData(parsedData) && parsedData?.parsed.type === 'mint';
 
-    if (isMetaplexNFT(parsedData, mintInfo) && parsedData.nftData) {
-        return <MetaplexNFTHeader nftData={parsedData.nftData} address={address} />;
+    if (isTrezoaplexNFT(parsedData, mintInfo) && parsedData.nftData) {
+        return <TrezoaplexNFTHeader nftData={parsedData.nftData} address={address} />;
     }
 
     const nftokenNFT = account && isNFTokenAccount(account);
@@ -471,8 +471,8 @@ function getTabs(pubkey: PublicKey, account: Account): TabComponent[] {
         tabs.push(...TABS_LOOKUP['address-lookup-table']);
     }
 
-    // Add the key for Metaplex NFTs
-    if (parsedData && (programTypeKey === 'spl-token:mint' || programTypeKey == 'spl-token-2022:mint') && (parsedData as TokenProgramData).nftData) {
+    // Add the key for Trezoaplex NFTs
+    if (parsedData && (programTypeKey === 'tpl-token:mint' || programTypeKey == 'tpl-token-2022:mint') && (parsedData as TokenProgramData).nftData) {
         tabs.push(...TABS_LOOKUP[`${programTypeKey}:metaplexNFT`]);
     }
 
@@ -505,7 +505,7 @@ function getTabs(pubkey: PublicKey, account: Account): TabComponent[] {
     }
 
     if (account.owner.toBase58() === ACCOUNT_COMPRESSION_ID.toBase58()) {
-        tabs.push(TABS_LOOKUP['spl-account-compression'][0]);
+        tabs.push(TABS_LOOKUP['tpl-account-compression'][0]);
     }
 
     return tabs.map(tab => {

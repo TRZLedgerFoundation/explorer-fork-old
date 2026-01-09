@@ -3,7 +3,7 @@
 import { useCluster } from '@providers/cluster';
 import { Cluster, ClusterStatus } from '@utils/cluster';
 import React from 'react';
-import { createDefaultRpcTransport, createSolanaRpc } from 'web3js-experimental';
+import { createDefaultRpcTransport, createTrezoaRpc } from 'web3js-experimental';
 
 export enum Status {
     Idle,
@@ -49,7 +49,7 @@ async function fetch(dispatch: Dispatch, cluster: Cluster, url: string) {
 
     try {
         const transport = createDefaultRpcTransport({ url });
-        const rpc = createSolanaRpc({ transport });
+        const rpc = createTrezoaRpc({ transport });
 
         const supplyResponse = await rpc
             .getSupply({ commitment: 'finalized', excludeNonCirculatingAccountsList: true })

@@ -11,7 +11,7 @@ const nextConfig = {
     remotePatterns: [
       {
         hostname: 'raw.githubusercontent.com',
-        pathname: '/solana-labs/token-list/main/assets/**',
+        pathname: '/trezoa-labs/token-list/main/assets/**',
         port: '',
         protocol: 'https',
       },

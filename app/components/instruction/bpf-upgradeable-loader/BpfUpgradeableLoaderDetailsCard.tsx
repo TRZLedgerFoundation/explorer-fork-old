@@ -1,5 +1,5 @@
 import { Address } from '@components/common/Address';
-import { ParsedInstruction, ParsedTransaction, PublicKey, SignatureResult } from '@solana/web3.js';
+import { ParsedInstruction, ParsedTransaction, PublicKey, SignatureResult } from '@trezoa/web3.js';
 import { camelToTitleCase } from '@utils/index';
 import { ParsedInfo } from '@validators/index';
 import React from 'react';

@@ -2,7 +2,7 @@ import { MintAccountInfo } from '@validators/accounts/token';
 
 import { isTokenProgramData, ParsedData, TokenProgramData } from '..';
 
-export default function isMetaplexNFT(
+export default function isTrezoaplexNFT(
     parsedData?: ParsedData,
     mintInfo?: MintAccountInfo
 ): parsedData is TokenProgramData {

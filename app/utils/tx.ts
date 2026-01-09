@@ -4,7 +4,7 @@ import {
     PartiallyDecodedInstruction,
     Transaction,
     TransactionInstruction,
-} from '@solana/web3.js';
+} from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { SerumMarketRegistry } from '@utils/serumMarketRegistry';
 import bs58 from 'bs58';

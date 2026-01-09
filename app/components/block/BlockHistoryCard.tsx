@@ -9,7 +9,7 @@ import {
     TransactionSignature,
     VersionedBlockResponse,
     VOTE_PROGRAM_ID,
-} from '@solana/web3.js';
+} from '@trezoa/web3.js';
 import { parseProgramLogs } from '@utils/program-logs';
 import { displayAddress } from '@utils/tx';
 import { pickClusterParams } from '@utils/url';

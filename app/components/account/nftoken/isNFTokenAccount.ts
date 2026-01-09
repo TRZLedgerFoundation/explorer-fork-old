@@ -1,4 +1,4 @@
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 
 import { Account } from '../../../providers/accounts';
 import { NFTOKEN_ADDRESS } from './nftoken';

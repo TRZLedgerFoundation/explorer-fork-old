@@ -1,4 +1,4 @@
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { Cluster, clusterUrl } from '@utils/cluster';
 
 import { getTokenInfo } from './token-info';

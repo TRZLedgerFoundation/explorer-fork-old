@@ -4,7 +4,7 @@ import { Cluster, clusterName, ClusterStatus, clusterUrl, DEFAULT_CLUSTER } from
 import { localStorageIsAvailable } from '@utils/local-storage';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { createContext, useContext, useEffect, useReducer, useState } from 'react';
-import { createDefaultRpcTransport, createSolanaRpc } from 'web3js-experimental';
+import { createDefaultRpcTransport, createTrezoaRpc } from 'web3js-experimental';
 
 import { EpochSchedule } from '../utils/epoch-schedule';
 
@@ -126,7 +126,7 @@ async function updateCluster(dispatch: Dispatch, cluster: Cluster, customUrl: st
 
         const transportUrl = clusterUrl(cluster, customUrl);
         const transport = createDefaultRpcTransport({ url: transportUrl });
-        const rpc = createSolanaRpc({ transport });
+        const rpc = createTrezoaRpc({ transport });
 
         const [firstAvailableBlock, epochSchedule, epochInfo] = await Promise.all([
             rpc.getFirstAvailableBlock().send(),
@@ -139,7 +139,7 @@ async function updateCluster(dispatch: Dispatch, cluster: Cluster, customUrl: st
             clusterInfo: {
                 epochInfo,
                 // These are incorrectly typed as unknown
-                // See https://github.com/solana-labs/solana-web3.js/issues/1389
+                // See https://github.com/trezoa-labs/trezoa-web3.js/issues/1389
                 epochSchedule: epochSchedule as EpochSchedule,
                 firstAvailableBlock: firstAvailableBlock as bigint,
             },

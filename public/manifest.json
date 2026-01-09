@@ -1,6 +1,6 @@
 {
-    "short_name": "Solana Explorer",
-    "name": "Inspect transactions, accounts, blocks, and more on the Solana blockchain",
+    "short_name": "Trezoa Explorer",
+    "name": "Inspect transactions, accounts, blocks, and more on the Trezoa blockchain",
     "icons": [
         {
             "src": "favicon.ico",

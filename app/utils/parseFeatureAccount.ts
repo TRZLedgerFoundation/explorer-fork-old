@@ -1,5 +1,5 @@
 import { Account } from '@providers/accounts';
-import * as BufferLayout from '@solana/buffer-layout';
+import * as BufferLayout from '@trezoa/buffer-layout';
 
 export const FEATURE_PROGRAM_ID = 'Feature111111111111111111111111111111111111';
 

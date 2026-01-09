@@ -1,7 +1,7 @@
 'use client';
 
 import { useCluster } from '@providers/cluster';
-import { useStatsProvider } from '@providers/stats/solanaClusterStats';
+import { useStatsProvider } from '@providers/stats/trezoaClusterStats';
 import { Cluster, clusterSlug } from '@utils/cluster';
 import { fetch } from 'cross-fetch';
 import React from 'react';
@@ -16,7 +16,7 @@ function getPingUrl(cluster: Cluster) {
         return undefined;
     }
 
-    return `https://ping.solana.com/${slug}/last6hours`;
+    return `https://ping.trezoa.com/${slug}/last6hours`;
 }
 
 export type PingMetric = {
@@ -78,7 +78,7 @@ function downsample(points: PingInfo[], bucketSize: number): PingInfo[] {
     return buckets;
 }
 
-export function SolanaPingProvider({ children }: Props) {
+export function TrezoaPingProvider({ children }: Props) {
     const { cluster } = useCluster();
     const { active } = useStatsProvider();
     const [rollup, setRollup] = React.useState<PingRollupInfo | undefined>({
@@ -159,7 +159,7 @@ export function SolanaPingProvider({ children }: Props) {
     return <PingContext.Provider value={rollup}>{children}</PingContext.Provider>;
 }
 
-export function useSolanaPingInfo() {
+export function useTrezoaPingInfo() {
     const context = React.useContext(PingContext);
     if (!context) {
         throw new Error(`useContext must be used within a StatsProvider`);

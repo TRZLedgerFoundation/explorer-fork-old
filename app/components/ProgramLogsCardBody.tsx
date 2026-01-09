@@ -1,5 +1,5 @@
 import { TableCardBody } from '@components/common/TableCardBody';
-import { ParsedMessage, PublicKey, VersionedMessage } from '@solana/web3.js';
+import { ParsedMessage, PublicKey, VersionedMessage } from '@trezoa/web3.js';
 import { ProgramName } from '@utils/anchor';
 import { Cluster } from '@utils/cluster';
 import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-anchor-id';

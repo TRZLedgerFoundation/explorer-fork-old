@@ -11,11 +11,11 @@ type Props = Readonly<{
 
 export async function generateMetadata(props: AddressPageMetadataProps): Promise<Metadata> {
     return {
-        description: `Attributes of the Metaplex NFT with address ${props.params.address} on Solana`,
-        title: `Metaplex NFT Attributes | ${await getReadableTitleFromAddress(props)} | Solana`,
+        description: `Attributes of the Trezoaplex NFT with address ${props.params.address} on Trezoa`,
+        title: `Trezoaplex NFT Attributes | ${await getReadableTitleFromAddress(props)} | Trezoa`,
     };
 }
 
-export default function MetaplexNFTAttributesPage(props: Props) {
+export default function TrezoaplexNFTAttributesPage(props: Props) {
     return <NFTAttributesPageClient {...props} />;
 }

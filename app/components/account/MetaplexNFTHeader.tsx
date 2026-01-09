@@ -1,16 +1,16 @@
 import { InfoTooltip } from '@components/common/InfoTooltip';
 import { ArtContent } from '@components/common/NFTArt';
-import { programs } from '@metaplex/js';
+import { programs } from '@trezoaplex/js';
 import { NFTData, useFetchAccountInfo, useMintAccountInfo } from '@providers/accounts';
 import { EditionInfo } from '@providers/accounts/utils/getEditionInfo';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { useClusterPath } from '@utils/url';
 import Link from 'next/link';
 import React, { createRef } from 'react';
 import { AlertOctagon, Check, ChevronDown } from 'react-feather';
 import useAsyncEffect from 'use-async-effect';
 
-export function MetaplexNFTHeader({ nftData, address }: { nftData: NFTData; address: string }) {
+export function TrezoaplexNFTHeader({ nftData, address }: { nftData: NFTData; address: string }) {
     const collection = nftData.metadata.collection;
     const collectionAddress = collection?.key;
     const collectionMintInfo = useMintAccountInfo(collectionAddress);
@@ -50,7 +50,7 @@ export function MetaplexNFTHeader({ nftData, address }: { nftData: NFTData; addr
                 <ArtContent pubkey={address} data={data} />
             </div>
             <div className="col mb-3 ms-0.5 mt-3">
-                {<h6 className="header-pretitle ms-1">Metaplex NFT</h6>}
+                {<h6 className="header-pretitle ms-1">Trezoaplex NFT</h6>}
                 <div className="d-flex align-items-center">
                     <h2 className="header-title ms-1 align-items-center no-overflow-with-ellipsis">
                         {metadata.data.name !== '' ? metadata.data.name : 'No NFT name was found'}

@@ -2,7 +2,7 @@
 
 import { ConcurrentMerkleTreeCard } from '@components/account/ConcurrentMerkleTreeCard';
 import { ParsedAccountRenderer } from '@components/account/ParsedAccountRenderer';
-import { PROGRAM_ID } from '@solana/spl-account-compression';
+import { PROGRAM_ID } from '@trezoa/tpl-account-compression';
 import React from 'react';
 
 type Props = Readonly<{
@@ -22,6 +22,6 @@ function ConcurrentMerkleTreeCardRenderer({
     return <ConcurrentMerkleTreeCard data={rawData} />;
 }
 
-export default function MetaplexNFTMetadataPageClient({ params: { address } }: Props) {
+export default function TrezoaplexNFTMetadataPageClient({ params: { address } }: Props) {
     return <ParsedAccountRenderer address={address} renderComponent={ConcurrentMerkleTreeCardRenderer} />;
 }

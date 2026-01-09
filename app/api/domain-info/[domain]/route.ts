@@ -1,4 +1,4 @@
-import { Connection } from "@solana/web3.js"
+import { Connection } from "@trezoa/web3.js"
 import { NextResponse } from "next/server"
 
 import { MAINNET_BETA_URL } from "@/app/utils/cluster"

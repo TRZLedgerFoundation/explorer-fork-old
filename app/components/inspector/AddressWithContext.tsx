@@ -1,7 +1,7 @@
 import { Address } from '@components/common/Address';
 import { Account, useAccountInfo, useAddressLookupTable, useFetchAccountInfo } from '@providers/accounts';
 import { useCluster } from '@providers/cluster';
-import { PublicKey, SystemProgram } from '@solana/web3.js';
+import { PublicKey, SystemProgram } from '@trezoa/web3.js';
 import { ClusterStatus } from '@utils/cluster';
 import { lamportsToSolString } from '@utils/index';
 import { addressLabel } from '@utils/tx';
@@ -101,7 +101,7 @@ function AccountInfo({ pubkey, validator }: { pubkey: PublicKey; validator?: Acc
     return (
         <span className="text-muted">
             {`Owned by ${ownerLabel || ownerAddress}.`}
-            {` Balance is ${lamportsToSolString(account.lamports)} SOL.`}
+            {` Balance is ${lamportsToSolString(account.lamports)} TRZ.`}
             {account.space !== undefined && ` Size is ${new Intl.NumberFormat('en-US').format(account.space)} byte(s).`}
         </span>
     );

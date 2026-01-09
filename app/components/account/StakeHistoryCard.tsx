@@ -21,9 +21,9 @@ export function StakeHistoryCard({ sysvarAccount }: { sysvarAccount: SysvarAccou
                         <thead>
                             <tr>
                                 <th className="w-1 text-muted">Epoch</th>
-                                <th className="text-muted">Effective (SOL)</th>
-                                <th className="text-muted">Activating (SOL)</th>
-                                <th className="text-muted">Deactivating (SOL)</th>
+                                <th className="text-muted">Effective (TRZ)</th>
+                                <th className="text-muted">Activating (TRZ)</th>
+                                <th className="text-muted">Deactivating (TRZ)</th>
                             </tr>
                         </thead>
                         <tbody className="list">

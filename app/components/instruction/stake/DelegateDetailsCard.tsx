@@ -1,5 +1,5 @@
 import { Address } from '@components/common/Address';
-import { ParsedInstruction, SignatureResult, StakeProgram } from '@solana/web3.js';
+import { ParsedInstruction, SignatureResult, StakeProgram } from '@trezoa/web3.js';
 import React from 'react';
 
 import { InstructionCard } from '../InstructionCard';

@@ -22,7 +22,7 @@ import {
     useTransactionStatus,
 } from '@providers/transactions';
 import { useFetchTransactionDetails } from '@providers/transactions/parsed';
-import { ParsedTransaction, SystemInstruction, SystemProgram, TransactionSignature } from '@solana/web3.js';
+import { ParsedTransaction, SystemInstruction, SystemProgram, TransactionSignature } from '@trezoa/web3.js';
 import { Cluster, ClusterStatus } from '@utils/cluster';
 import { displayTimestamp } from '@utils/date';
 import { SignatureProps } from '@utils/index';
@@ -320,7 +320,7 @@ function StatusCard({ signature, autoRefresh }: SignatureProps & AutoRefreshProp
 
                 {fee && (
                     <tr>
-                        <td>Fee (SOL)</td>
+                        <td>Fee (TRZ)</td>
                         <td className="text-lg-end">
                             <SolBalance lamports={fee} />
                         </td>
@@ -442,8 +442,8 @@ function AccountsCard({ signature }: SignatureProps) {
                         <tr>
                             <th className="text-muted">#</th>
                             <th className="text-muted">Address</th>
-                            <th className="text-muted">Change (SOL)</th>
-                            <th className="text-muted">Post Balance (SOL)</th>
+                            <th className="text-muted">Change (TRZ)</th>
+                            <th className="text-muted">Post Balance (TRZ)</th>
                             <th className="text-muted">Details</th>
                         </tr>
                     </thead>

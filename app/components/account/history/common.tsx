@@ -1,4 +1,4 @@
-import { ParsedTransactionWithMeta } from '@solana/web3.js';
+import { ParsedTransactionWithMeta } from '@trezoa/web3.js';
 
 export type MintDetails = {
     decimals: number;

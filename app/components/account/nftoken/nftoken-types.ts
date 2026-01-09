@@ -1,4 +1,4 @@
-import * as BufferLayout from '@solana/buffer-layout';
+import * as BufferLayout from '@trezoa/buffer-layout';
 
 const publicKey = (property: string) => {
     return BufferLayout.blob(32, property);

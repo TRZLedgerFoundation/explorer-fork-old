@@ -1,4 +1,4 @@
-import { ClusterStatsStatus } from './solanaClusterStats';
+import { ClusterStatsStatus } from './trezoaClusterStats';
 
 export type PerformanceInfo = {
     status: ClusterStatsStatus;

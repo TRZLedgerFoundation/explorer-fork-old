@@ -11,7 +11,7 @@ import {
     ParsedInstruction,
     ParsedTransactionWithMeta,
     PartiallyDecodedInstruction,
-} from '@solana/web3.js';
+} from '@trezoa/web3.js';
 import { isTokenProgram } from '@utils/programs';
 import { intoTransactionInstruction } from '@utils/tx';
 import { ParsedInfo } from '@validators/index';

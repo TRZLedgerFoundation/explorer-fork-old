@@ -13,7 +13,7 @@ export enum PROGRAM_NAMES {
     SECP256K1 = 'Secp256k1 SigVerify Precompile',
     ED25519 = 'Ed25519 SigVerify Precompile',
 
-    // spl
+    // tpl
     ASSOCIATED_TOKEN = 'Associated Token Program',
     ACCOUNT_COMPRESSION = 'State Compression Program',
     FEATURE_PROPOSAL = 'Feature Proposal Program',
@@ -30,7 +30,7 @@ export enum PROGRAM_NAMES {
 
     // other
     ACUMEN = 'Acumen Program',
-    BREAK_SOLANA = 'Break Solana Program',
+    BREAK_TRZANA = 'Break Trezoa Program',
     CHAINLINK_ORACLE = 'Chainlink OCR2 Oracle Program',
     CHAINLINK_STORE = 'Chainlink Store Program',
     CLOCKWORK_1 = 'Clockwork Thread Program v1',
@@ -42,7 +42,7 @@ export enum PROGRAM_NAMES {
     MANGO_3 = 'Mango Program v3',
     MARINADE = 'Marinade Staking Program',
     MERCURIAL = 'Mercurial Stable Swap Program',
-    METAPLEX = 'Metaplex Program',
+    METAPLEX = 'Trezoaplex Program',
     NFT_AUCTION = 'NFT Auction Program',
     NFT_CANDY_MACHINE = 'NFT Candy Machine Program',
     NFT_CANDY_MACHINE_V2 = 'NFT Candy Machine Program V2',
@@ -70,8 +70,8 @@ export enum PROGRAM_NAMES {
     SERUM_3 = 'Serum Dex Program v3',
     SERUM_SWAP = 'Serum Swap Program',
     SERUM_POOL = 'Serum Pool',
-    SOLEND = 'Solend Program',
-    SOLIDO = 'Lido for Solana Program',
+    TRZEND = 'Solend Program',
+    TRZIDO = 'Lido for Trezoa Program',
     STEP_SWAP = 'Step Finance Swap Program',
     SWIM_SWAP = 'Swim Swap Program',
     SWITCHBOARD = 'Switchboard Oracle Program',
@@ -79,8 +79,8 @@ export enum PROGRAM_NAMES {
     WORMHOLE_CORE = 'Wormhole Core Bridge',
     WORMHOLE_TOKEN = 'Wormhole Token Bridge',
     WORMHOLE_NFT = 'Wormhole NFT Bridge',
-    SOLANART = 'Solanart',
-    SOLANART_GO = 'Solanart - Global offers',
+    TRZANART = 'Trezoart',
+    TRZANART_GO = 'Trezoart - Global offers',
     STEPN_DEX = 'STEPN Dex',
     OPENBOOK_DEX = 'OpenBook Dex',
 }
@@ -131,7 +131,7 @@ export const PROGRAM_INFO_BY_ID: { [address: string]: ProgramInfo } = {
     },
     '5ZfZAwP2m93waazg8DkrrVmsupeiPEvaEHowiUP7UAbJ': {
         deployments: [Cluster.MainnetBeta],
-        name: PROGRAM_NAMES.SOLANART_GO,
+        name: PROGRAM_NAMES.TRZANART_GO,
     },
     '5fNfvyp5czQVX77yoACa3JJVEhdRaWjPuazuWgjhTqEH': {
         deployments: [Cluster.MainnetBeta],
@@ -165,7 +165,7 @@ export const PROGRAM_INFO_BY_ID: { [address: string]: ProgramInfo } = {
         deployments: [Cluster.MainnetBeta],
         name: PROGRAM_NAMES.SERUM_3,
     },
-    // spl
+    // tpl
     ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL: {
         deployments: ALL_CLUSTERS,
         name: PROGRAM_NAMES.ASSOCIATED_TOKEN,
@@ -181,7 +181,7 @@ export const PROGRAM_INFO_BY_ID: { [address: string]: ProgramInfo } = {
     },
     BrEAK7zGZ6dM71zUDACDqJnekihmwF15noTddWTsknjC: {
         deployments: LIVE_CLUSTERS,
-        name: PROGRAM_NAMES.BREAK_SOLANA,
+        name: PROGRAM_NAMES.BREAK_TRZANA,
     },
     // other
     C64kTdg1Hzv5KoQmZrQRcm2Qz7PkxtFBgw7EpFhvYn8W: {
@@ -190,7 +190,7 @@ export const PROGRAM_INFO_BY_ID: { [address: string]: ProgramInfo } = {
     },
     CJsLwbP1iu5DuUikHEJnLfANgKy6stB2uFgvBBHoyxwz: {
         deployments: [Cluster.MainnetBeta],
-        name: PROGRAM_NAMES.SOLANART,
+        name: PROGRAM_NAMES.TRZANART,
     },
     CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh: {
         deployments: [Cluster.MainnetBeta, Cluster.Devnet],
@@ -206,7 +206,7 @@ export const PROGRAM_INFO_BY_ID: { [address: string]: ProgramInfo } = {
     },
     CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi: {
         deployments: [Cluster.MainnetBeta],
-        name: PROGRAM_NAMES.SOLIDO,
+        name: PROGRAM_NAMES.TRZIDO,
     },
     Crt7UoUR6QgrFrN7j8rmSQpUTNWNSitSwWvsWGf1qZ5t: {
         deployments: [Cluster.Devnet, Cluster.MainnetBeta],
@@ -330,7 +330,7 @@ export const PROGRAM_INFO_BY_ID: { [address: string]: ProgramInfo } = {
     },
     So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo: {
         deployments: [Cluster.MainnetBeta],
-        name: PROGRAM_NAMES.SOLEND,
+        name: PROGRAM_NAMES.TRZEND,
     },
     Stake11111111111111111111111111111111111111: {
         deployments: ALL_CLUSTERS,
@@ -445,9 +445,9 @@ export const TOKEN_IDS: { [key: string]: string } = {
   TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb: 'Token-2022 Program',
 } as const;
 
-export type TokenProgram = 'spl-token' | 'spl-token-2022';
+export type TokenProgram = 'tpl-token' | 'tpl-token-2022';
 export function assertIsTokenProgram(program: string): asserts program is TokenProgram {
-    if (program !== 'spl-token' && program !== 'spl-token-2022') throw new Error("Expected token program name of `spl-token` or `spl-token-2022`");
+    if (program !== 'tpl-token' && program !== 'tpl-token-2022') throw new Error("Expected token program name of `tpl-token` or `tpl-token-2022`");
 }
 export function isTokenProgram(program: string): program is TokenProgram {
     try {

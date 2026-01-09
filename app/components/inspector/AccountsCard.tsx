@@ -1,6 +1,6 @@
 import { ErrorCard } from '@components/common/ErrorCard';
 import { TableCardBody } from '@components/common/TableCardBody';
-import { PublicKey, VersionedMessage } from '@solana/web3.js';
+import { PublicKey, VersionedMessage } from '@trezoa/web3.js';
 import React from 'react';
 
 import { AddressFromLookupTableWithContext, AddressWithContext } from './AddressWithContext';

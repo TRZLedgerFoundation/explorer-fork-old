@@ -1,8 +1,8 @@
-import { PublicKey, TransactionSignature } from '@solana/web3.js';
+import { PublicKey, TransactionSignature } from '@trezoa/web3.js';
 import { HumanizeDuration, HumanizeDurationLanguage } from 'humanize-duration-ts';
 
 // Switch to web3 constant when web3 updates superstruct
-export const LAMPORTS_PER_SOL = 1_000_000_000;
+export const LAMPORTS_PER_TRZ = 1_000_000_000;
 export const MICRO_LAMPORTS_PER_LAMPORT = 1_000_000;
 
 export const NUM_TICKS_PER_SECOND = 160;
@@ -41,7 +41,7 @@ export function microLamportsToLamportsString(microLamports: number | bigint, ma
 
 export function lamportsToSol(lamports: number | bigint): number {
     if (typeof lamports === 'number') {
-        return lamports / LAMPORTS_PER_SOL;
+        return lamports / LAMPORTS_PER_TRZ;
     }
 
     let signMultiplier = 1;
@@ -57,8 +57,8 @@ export function lamportsToSol(lamports: number | bigint): number {
 }
 
 export function lamportsToSolString(lamports: number | bigint, maximumFractionDigits = 9): string {
-    const sol = lamportsToSol(lamports);
-    return new Intl.NumberFormat('en-US', { maximumFractionDigits }).format(sol);
+    const trz = lamportsToSol(lamports);
+    return new Intl.NumberFormat('en-US', { maximumFractionDigits }).format(trz);
 }
 
 export function numberWithSeparator(s: string) {

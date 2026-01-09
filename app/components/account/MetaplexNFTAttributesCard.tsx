@@ -8,7 +8,7 @@ interface Attribute {
     value: string;
 }
 
-export function MetaplexNFTAttributesCard({ nftData }: { nftData: NFTData }) {
+export function TrezoaplexNFTAttributesCard({ nftData }: { nftData: NFTData }) {
     const [attributes, setAttributes] = React.useState<Attribute[]>([]);
     const [status, setStatus] = React.useState<'loading' | 'success' | 'error'>('loading');
 

@@ -2,7 +2,7 @@ import { Address } from '@components/common/Address';
 import { BorshInstructionCoder, Idl, Program } from '@project-serum/anchor';
 import { IdlField, IdlInstruction, IdlType, IdlTypeDef } from '@project-serum/anchor/dist/cjs/idl';
 import { useAnchorProgram } from '@providers/anchor';
-import { PublicKey, TransactionInstruction } from '@solana/web3.js';
+import { PublicKey, TransactionInstruction } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { camelToTitleCase, numberWithSeparator, snakeToTitleCase } from '@utils/index';
 import { getProgramName } from '@utils/tx';

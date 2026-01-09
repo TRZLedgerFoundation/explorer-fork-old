@@ -1,6 +1,6 @@
 'use client';
 
-import { MetaplexMetadataCard } from '@components/account/MetaplexMetadataCard';
+import { TrezoaplexMetadataCard } from '@components/account/TrezoaplexMetadataCard';
 import { ParsedAccountRenderer } from '@components/account/ParsedAccountRenderer';
 import { isTokenProgramData } from '@providers/accounts';
 import React from 'react';
@@ -11,7 +11,7 @@ type Props = Readonly<{
     };
 }>;
 
-function MetaplexMetadataCardRenderer({
+function TrezoaplexMetadataCardRenderer({
     account,
     onNotFound,
 }: React.ComponentProps<React.ComponentProps<typeof ParsedAccountRenderer>['renderComponent']>) {
@@ -19,9 +19,9 @@ function MetaplexMetadataCardRenderer({
     if (!parsedData || !isTokenProgramData(parsedData) || parsedData.parsed.type !== 'mint' || !parsedData.nftData) {
         return onNotFound();
     }
-    return <MetaplexMetadataCard nftData={parsedData.nftData} />;
+    return <TrezoaplexMetadataCard nftData={parsedData.nftData} />;
 }
 
-export default function MetaplexNFTMetadataPageClient({ params: { address } }: Props) {
-    return <ParsedAccountRenderer address={address} renderComponent={MetaplexMetadataCardRenderer} />;
+export default function TrezoaplexNFTMetadataPageClient({ params: { address } }: Props) {
+    return <ParsedAccountRenderer address={address} renderComponent={TrezoaplexMetadataCardRenderer} />;
 }

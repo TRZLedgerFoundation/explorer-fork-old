@@ -1,5 +1,5 @@
 import { useCluster } from '@providers/cluster';
-import { useStatsProvider } from '@providers/stats/solanaClusterStats';
+import { useStatsProvider } from '@providers/stats/trezoaClusterStats';
 import React from 'react';
 import { RefreshCw } from 'react-feather';
 

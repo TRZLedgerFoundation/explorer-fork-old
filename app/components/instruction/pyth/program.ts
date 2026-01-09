@@ -1,6 +1,6 @@
-import * as BufferLayout from '@solana/buffer-layout';
-import { Layout, uint8ArrayToBuffer } from '@solana/buffer-layout';
-import { PublicKey, TransactionInstruction } from '@solana/web3.js';
+import * as BufferLayout from '@trezoa/buffer-layout';
+import { Layout, uint8ArrayToBuffer } from '@trezoa/buffer-layout';
+import { PublicKey, TransactionInstruction } from '@trezoa/web3.js';
 
 /**
  * An enumeration of valid PythInstructionTypes

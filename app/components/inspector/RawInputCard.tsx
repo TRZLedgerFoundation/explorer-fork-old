@@ -1,4 +1,4 @@
-import { VersionedMessage } from '@solana/web3.js';
+import { VersionedMessage } from '@trezoa/web3.js';
 import base58 from 'bs58';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React from 'react';

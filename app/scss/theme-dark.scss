@@ -11,10 +11,10 @@ $path-to-img: '/img/dashkit' !default;
 @import '~bootstrap/scss/functions';
 
 // Custom variables
-@import 'solana-variables-dark';
+@import 'trezoa-variables-dark';
 
 // Custom variables
-@import 'solana-variables';
+@import 'trezoa-variables';
 
 // Dark mode variables
 @import 'dashkit/dark/variables-dark';
@@ -32,7 +32,7 @@ $path-to-img: '/img/dashkit' !default;
 @import 'dashkit/dark/overrides-dark';
 
 // Custom core
-@import 'solana';
+@import 'trezoa';
 
 // Dark mode overrides
-@import 'solana-dark-overrides';
+@import 'trezoa-dark-overrides';

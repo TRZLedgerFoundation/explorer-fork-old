@@ -1,6 +1,6 @@
 import { parseNFTokenNFTAccount } from '@components/account/nftoken/isNFTokenAccount';
 import { NFTOKEN_ADDRESS } from '@components/account/nftoken/nftoken';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 
 describe('parseNFTokenAccounts', () => {
     it('parses an NFT', () => {

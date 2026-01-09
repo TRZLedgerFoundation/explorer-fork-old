@@ -1,19 +1,19 @@
 'use client';
 
-import { getFilteredProgramAccounts, NAME_PROGRAM_ID, performReverseLookup } from '@bonfida/spl-name-service';
+import { getFilteredProgramAccounts, NAME_PROGRAM_ID, performReverseLookup } from '@bonfida/tpl-name-service';
 import { useCluster } from '@providers/cluster';
-import { Connection, PublicKey } from '@solana/web3.js';
+import { Connection, PublicKey } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { useEffect, useState } from 'react';
 
-import { DomainInfo, SOL_TLD_AUTHORITY } from './domain-info';
+import { DomainInfo, TRZ_TLD_AUTHORITY } from './domain-info';
 
 async function getUserDomainAddresses(connection: Connection, userAddress: string): Promise<PublicKey[]> {
     const filters = [
         // parent
         {
             memcmp: {
-                bytes: SOL_TLD_AUTHORITY.toBase58(),
+                bytes: TRZ_TLD_AUTHORITY.toBase58(),
                 offset: 0,
             },
         },

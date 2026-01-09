@@ -1,6 +1,6 @@
-import { NodeWallet } from '@metaplex/js';
+import { NodeWallet } from '@trezoaplex/js';
 import { Idl, Program, Provider } from '@project-serum/anchor';
-import { Connection, Keypair } from '@solana/web3.js';
+import { Connection, Keypair } from '@trezoa/web3.js';
 
 const cachedAnchorProgramPromises: Record<
     string,

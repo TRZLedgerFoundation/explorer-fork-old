@@ -1,7 +1,7 @@
 import { Address } from '@components/common/Address';
 import { TableCardBody } from '@components/common/TableCardBody';
 import { Account } from '@providers/accounts';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { parseFeatureAccount } from '@utils/parseFeatureAccount';
 import { ErrorBoundary } from 'react-error-boundary';
 

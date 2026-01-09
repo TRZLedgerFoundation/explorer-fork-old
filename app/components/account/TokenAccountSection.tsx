@@ -4,9 +4,9 @@ import { LoadingCard } from '@components/common/LoadingCard';
 import { TableCardBody } from '@components/common/TableCardBody';
 import { Account, NFTData, TokenProgramData, useFetchAccountInfo } from '@providers/accounts';
 import { TOKEN_2022_PROGRAM_ID } from '@providers/accounts/tokens';
-import isMetaplexNFT from '@providers/accounts/utils/isMetaplexNFT';
+import isTrezoaplexNFT from '@providers/accounts/utils/isTrezoaplexNFT';
 import { useCluster } from '@providers/cluster';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { CoingeckoStatus, useCoinGecko } from '@utils/coingecko';
 import { displayTimestamp, displayTimestampWithoutDate } from '@utils/date';
@@ -75,7 +75,7 @@ export function TokenAccountSection({
             case 'mint': {
                 const mintInfo = create(tokenAccount.info, MintAccountInfo);
 
-                if (isMetaplexNFT(account.data.parsed, mintInfo)) {
+                if (isTrezoaplexNFT(account.data.parsed, mintInfo)) {
                     return (
                         <NonFungibleTokenMintAccountCard
                             account={account}
@@ -418,7 +418,7 @@ function TokenAccountCard({ account, info }: { account: Account; info: TokenAcco
 
     useEffect(() => {
         if (info.isNative) {
-            setSymbol('SOL');
+            setSymbol('TRZ');
         } else {
             setSymbol(tokenInfo?.symbol);
         }
@@ -473,7 +473,7 @@ function TokenAccountCard({ account, info }: { account: Account; info: TokenAcco
                 )}
                 {info.rentExemptReserve && (
                     <tr>
-                        <td>Rent-exempt reserve (SOL)</td>
+                        <td>Rent-exempt reserve (TRZ)</td>
                         <td className="text-lg-end">
                             <>
                                 ◎

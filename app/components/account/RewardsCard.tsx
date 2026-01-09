@@ -7,7 +7,7 @@ import { Slot } from '@components/common/Slot';
 import { useAccountInfo } from '@providers/accounts';
 import { useFetchRewards, useRewards } from '@providers/accounts/rewards';
 import { FetchStatus } from '@providers/cache';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { lamportsToSolString } from '@utils/index';
 import React from 'react';
 

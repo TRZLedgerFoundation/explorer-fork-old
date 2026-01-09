@@ -1,7 +1,7 @@
 import getReadableTitleFromAddress, { AddressPageMetadataProps } from '@utils/get-readable-title-from-address';
 import { Metadata } from 'next/types';
 
-import MetaplexNFTMetadataPageClient from './page-client';
+import TrezoaplexNFTMetadataPageClient from './page-client';
 
 type Props = Readonly<{
     params: {
@@ -11,11 +11,11 @@ type Props = Readonly<{
 
 export async function generateMetadata(props: AddressPageMetadataProps): Promise<Metadata> {
     return {
-        description: `Metadata for the Metaplex NFT with address ${props.params.address} on Solana`,
-        title: `Metaplex NFT Metadata | ${await getReadableTitleFromAddress(props)} | Solana`,
+        description: `Metadata for the Trezoaplex NFT with address ${props.params.address} on Trezoa`,
+        title: `Trezoaplex NFT Metadata | ${await getReadableTitleFromAddress(props)} | Trezoa`,
     };
 }
 
-export default function MetaplexNFTMetadataPage(props: Props) {
-    return <MetaplexNFTMetadataPageClient {...props} />;
+export default function TrezoaplexNFTMetadataPage(props: Props) {
+    return <TrezoaplexNFTMetadataPageClient {...props} />;
 }

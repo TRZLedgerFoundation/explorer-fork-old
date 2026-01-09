@@ -1,5 +1,5 @@
-import { Connection, PublicKey } from '@solana/web3.js';
-import { ChainId, Client, Token, UtlConfig } from '@solflare-wallet/utl-sdk';
+import { Connection, PublicKey } from '@trezoa/web3.js';
+import { ChainId, Client, Token, UtlConfig } from '@trzflare-wallet/utl-sdk';
 
 import { Cluster } from './cluster';
 
@@ -86,7 +86,7 @@ export async function getTokenInfoWithoutOnChainFallback(
 
     // Request token info directly from UTL API
     // We don't use the SDK here because we don't want it to fallback to an on-chain request
-    const response = await fetch(`https://token-list-api.solana.cloud/v1/mints?chainId=${chainId}`, {
+    const response = await fetch(`https://token-list-api.trezoa.cloud/v1/mints?chainId=${chainId}`, {
         body: JSON.stringify({ addresses: [address.toBase58()] }),
         headers: {
             "Content-Type": "application/json",
@@ -108,7 +108,7 @@ async function getFullLegacyTokenInfoUsingCdn(
     chainId: ChainId
 ): Promise<FullLegacyTokenInfo | undefined> {
     const tokenListResponse = await fetch(
-        'https://cdn.jsdelivr.net/gh/solana-labs/token-list@latest/src/tokens/solana.tokenlist.json'
+        'https://cdn.jsdelivr.net/gh/trezoa-labs/token-list@latest/src/tokens/trezoa.tokenlist.json'
     );
     if (tokenListResponse.status >= 400) {
         console.error(new Error('Error fetching token list from CDN'));

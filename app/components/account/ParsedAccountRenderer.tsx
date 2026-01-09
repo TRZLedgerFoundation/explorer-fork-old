@@ -3,7 +3,7 @@ import { LoadingCard } from '@components/common/LoadingCard';
 import { Account, useAccountInfo, useFetchAccountInfo } from '@providers/accounts';
 import { FetchStatus } from '@providers/cache';
 import { useCluster } from '@providers/cluster';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { ClusterStatus } from '@utils/cluster';
 import { RedirectType } from 'next/dist/client/components/redirect';
 import { redirect } from 'next/navigation';

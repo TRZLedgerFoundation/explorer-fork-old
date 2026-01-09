@@ -1,7 +1,7 @@
 import { Address } from '@components/common/Address';
 import { BorshInstructionCoder, Idl, Instruction, Program } from '@project-serum/anchor';
 import { IdlInstruction } from '@project-serum/anchor/dist/cjs/idl';
-import { SignatureResult, TransactionInstruction } from '@solana/web3.js';
+import { SignatureResult, TransactionInstruction } from '@trezoa/web3.js';
 import {
     getAnchorAccountsFromInstruction,
     getAnchorNameForInstruction,

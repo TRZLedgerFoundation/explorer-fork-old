@@ -9,7 +9,7 @@ import {
     ParsedTransactionWithMeta,
     PublicKey,
     TransactionSignature,
-} from '@solana/web3.js';
+} from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import React from 'react';
 

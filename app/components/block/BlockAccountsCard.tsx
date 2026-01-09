@@ -1,5 +1,5 @@
 import { Address } from '@components/common/Address';
-import { PublicKey, VersionedBlockResponse } from '@solana/web3.js';
+import { PublicKey, VersionedBlockResponse } from '@trezoa/web3.js';
 import { useClusterPath } from '@utils/url';
 import Link from 'next/link';
 import React from 'react';

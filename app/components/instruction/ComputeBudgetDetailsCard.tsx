@@ -1,7 +1,7 @@
 import { Address } from '@components/common/Address';
 import { SolBalance } from '@components/common/SolBalance';
 import { useCluster } from '@providers/cluster';
-import { ComputeBudgetInstruction, SignatureResult, TransactionInstruction } from '@solana/web3.js';
+import { ComputeBudgetInstruction, SignatureResult, TransactionInstruction } from '@trezoa/web3.js';
 import { microLamportsToLamportsString } from '@utils/index';
 import React from 'react';
 
@@ -52,7 +52,7 @@ export function ComputeBudgetDetailsCard({
                         </tr>
 
                         <tr>
-                            <td>Additional Fee (SOL)</td>
+                            <td>Additional Fee (TRZ)</td>
                             <td className="text-lg-end">
                                 <SolBalance lamports={additionalFee} />
                             </td>

@@ -1,7 +1,7 @@
 import { Address } from '@components/common/Address';
 import { TableCardBody } from '@components/common/TableCardBody';
 import { Account, useFetchAccountInfo } from '@providers/accounts';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { Suspense, useState } from 'react';
 import { RefreshCw } from 'react-feather';
 

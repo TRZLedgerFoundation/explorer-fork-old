@@ -7,7 +7,7 @@ import { Signature } from '@components/common/Signature';
 import { useAccountHistory } from '@providers/accounts';
 import { useFetchAccountHistory } from '@providers/accounts/history';
 import { FetchStatus } from '@providers/cache';
-import { ParsedInstruction, ParsedTransactionWithMeta, PartiallyDecodedInstruction, PublicKey } from '@solana/web3.js';
+import { ParsedInstruction, ParsedTransactionWithMeta, PartiallyDecodedInstruction, PublicKey } from '@trezoa/web3.js';
 import { getTokenInstructionName, InstructionContainer } from '@utils/instruction';
 import React, { useMemo } from 'react';
 import Moment from 'react-moment';

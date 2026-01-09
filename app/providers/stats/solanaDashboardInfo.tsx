@@ -1,5 +1,5 @@
-import { ClusterStatsStatus } from './solanaClusterStats';
-import { PerformanceSample } from './solanaPerformanceInfo';
+import { ClusterStatsStatus } from './trezoaClusterStats';
+import { PerformanceSample } from './trezoaPerformanceInfo';
 
 export type DashboardInfo = {
     status: ClusterStatsStatus;

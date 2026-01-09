@@ -35,7 +35,7 @@ import {
     PartiallyDecodedInstruction,
     SignatureResult,
     TransactionSignature,
-} from '@solana/web3.js';
+} from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { INNER_INSTRUCTIONS_START_SLOT, SignatureProps } from '@utils/index';
 import { intoTransactionInstruction } from '@utils/tx';
@@ -175,7 +175,7 @@ function InstructionCard({
         };
 
         switch (ix.program) {
-            case 'spl-token':
+            case 'tpl-token':
                 return (
                     <ErrorBoundary fallback={<UnknownDetailsCard {...props} />} key={key}>
                         <TokenDetailsCard {...props} key={key} />

@@ -2,7 +2,7 @@
 
 import * as Cache from '@providers/cache';
 import { useCluster } from '@providers/cluster';
-import { Connection } from '@solana/web3.js';
+import { Connection } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import React from 'react';
 

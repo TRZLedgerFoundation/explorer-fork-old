@@ -1,7 +1,7 @@
 'use client';
 
 import { useCluster } from '@providers/cluster';
-import { AccountBalancePair, Connection } from '@solana/web3.js';
+import { AccountBalancePair, Connection } from '@trezoa/web3.js';
 import { Cluster, ClusterStatus } from '@utils/cluster';
 import React from 'react';
 

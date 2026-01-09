@@ -2,9 +2,9 @@
 
 import { TableCardBody } from '@components/common/TableCardBody';
 import { StatsNotReady } from '@components/StatsNotReady';
-import { ClusterStatsStatus, PERF_UPDATE_SEC, usePerformanceInfo } from '@providers/stats/solanaClusterStats';
-import { PerformanceInfo } from '@providers/stats/solanaPerformanceInfo';
-import { PingInfo, PingRollupInfo, PingStatus, useSolanaPingInfo } from '@providers/stats/SolanaPingProvider';
+import { ClusterStatsStatus, PERF_UPDATE_SEC, usePerformanceInfo } from '@providers/stats/trezoaClusterStats';
+import { PerformanceInfo } from '@providers/stats/trezoaPerformanceInfo';
+import { PingInfo, PingRollupInfo, PingStatus, useTrezoaPingInfo } from '@providers/stats/TrezoaPingProvider';
 import { BarElement, CategoryScale, Chart, ChartData, ChartOptions, LinearScale, Tooltip } from 'chart.js';
 import classNames from 'classnames';
 import React from 'react';
@@ -267,7 +267,7 @@ function AnimatedTransactionCount({ info }: { info: PerformanceInfo }) {
 }
 
 function PingStatsCardBody({ series, setSeries }: { series: Series; setSeries: SetSeries }) {
-    const pingInfo = useSolanaPingInfo();
+    const pingInfo = useTrezoaPingInfo();
 
     if (pingInfo.status !== PingStatus.Ready) {
         return <PingStatsNotReady error={pingInfo.status === PingStatus.Error} retry={pingInfo.retry} />;
@@ -281,7 +281,7 @@ function PingStatsNotReady({ error, retry }: StatsNotReadyProps) {
     if (error) {
         return (
             <div className="card-body text-center">
-                There was a problem loading solana ping stats.{' '}
+                There was a problem loading trezoa ping stats.{' '}
                 {retry && (
                     <button
                         className="btn btn-white btn-sm"

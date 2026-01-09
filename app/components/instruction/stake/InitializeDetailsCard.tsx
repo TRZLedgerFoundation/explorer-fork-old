@@ -1,6 +1,6 @@
 import { Address } from '@components/common/Address';
 import { Epoch } from '@components/common/Epoch';
-import { ParsedInstruction, SignatureResult, StakeProgram, SystemProgram } from '@solana/web3.js';
+import { ParsedInstruction, SignatureResult, StakeProgram, SystemProgram } from '@trezoa/web3.js';
 import { displayTimestampUtc } from '@utils/date';
 import React from 'react';
 

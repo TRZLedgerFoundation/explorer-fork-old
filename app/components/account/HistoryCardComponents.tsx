@@ -1,4 +1,4 @@
-import { ConfirmedSignatureInfo, TransactionError } from '@solana/web3.js';
+import { ConfirmedSignatureInfo, TransactionError } from '@trezoa/web3.js';
 import React from 'react';
 import { RefreshCw } from 'react-feather';
 

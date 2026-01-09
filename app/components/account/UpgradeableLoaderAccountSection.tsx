@@ -88,7 +88,7 @@ export function UpgradeableProgramSection({
                     </tr>
                 )}
                 <tr>
-                    <td>Balance (SOL)</td>
+                    <td>Balance (TRZ)</td>
                     <td className="text-lg-end text-uppercase">
                         <SolBalance lamports={account.lamports} />
                     </td>
@@ -163,7 +163,7 @@ export function UpgradeableProgramSection({
 function SecurityLabel() {
     return (
         <InfoTooltip text="Security.txt helps security researchers to contact developers if they find security bugs.">
-            <Link rel="noopener noreferrer" target="_blank" href="https://github.com/neodyme-labs/solana-security-txt">
+            <Link rel="noopener noreferrer" target="_blank" href="https://github.com/neodyme-labs/trezoa-security-txt">
                 <span className="security-txt-link-color-hack-reee">Security.txt</span>
                 <ExternalLink className="align-text-top ms-2" size={13} />
             </Link>
@@ -197,7 +197,7 @@ export function UpgradeableProgramDataSection({
                     </td>
                 </tr>
                 <tr>
-                    <td>Balance (SOL)</td>
+                    <td>Balance (TRZ)</td>
                     <td className="text-lg-end text-uppercase">
                         <SolBalance lamports={account.lamports} />
                     </td>
@@ -261,7 +261,7 @@ export function UpgradeableProgramBufferSection({
                     </td>
                 </tr>
                 <tr>
-                    <td>Balance (SOL)</td>
+                    <td>Balance (TRZ)</td>
                     <td className="text-lg-end text-uppercase">
                         <SolBalance lamports={account.lamports} />
                     </td>

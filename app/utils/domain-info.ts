@@ -1,8 +1,8 @@
-import { getHashedName, getNameAccountKey, getNameOwner } from '@bonfida/spl-name-service';
-import { Connection, PublicKey } from '@solana/web3.js';
+import { getHashedName, getNameAccountKey, getNameOwner } from '@bonfida/tpl-name-service';
+import { Connection, PublicKey } from '@trezoa/web3.js';
 
-// Address of the SOL TLD
-export const SOL_TLD_AUTHORITY = new PublicKey('58PwtjSDuFHuUkYjH9BYnnQKHfwo9reZhC2zMJv9JPkx');
+// Address of the TRZ TLD
+export const TRZ_TLD_AUTHORITY = new PublicKey('58PwtjSDuFHuUkYjH9BYnnQKHfwo9reZhC2zMJv9JPkx');
 
 async function getDomainKey(name: string, nameClass?: PublicKey, nameParent?: PublicKey) {
     const hashedDomainName = await getHashedName(name);
@@ -24,7 +24,7 @@ export async function getDomainInfo(domain: string, connection: Connection) {
     const domainKey = await getDomainKey(
         domain.slice(0, -4), // remove .sol
         undefined,
-        SOL_TLD_AUTHORITY
+        TRZ_TLD_AUTHORITY
     );
     try {
         const registry = await getNameOwner(connection, domainKey);

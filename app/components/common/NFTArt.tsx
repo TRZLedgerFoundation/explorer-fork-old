@@ -1,8 +1,8 @@
 import { Stream } from '@cloudflare/stream-react';
 import { LoadingArtPlaceholder } from '@components/common/LoadingArtPlaceholder';
-import ErrorLogo from '@img/logos-solana/dark-solana-logo.svg';
-import { MetadataJson, MetaDataJsonCategory, MetadataJsonFile } from '@metaplex/js';
-import { PublicKey } from '@solana/web3.js';
+import ErrorLogo from '@img/logos-trezoa/dark-trezoa-logo.svg';
+import { MetadataJson, MetaDataJsonCategory, MetadataJsonFile } from '@trezoaplex/js';
+import { PublicKey } from '@trezoa/web3.js';
 import { getLast } from '@utils/index';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 export const MAX_TIME_LOADING_IMAGE = 5000; /* 5 seconds */
 
-const ErrorPlaceHolder = () => <Image src={ErrorLogo} width={120} height={120} alt="Solana Logo" />;
+const ErrorPlaceHolder = () => <Image src={ErrorLogo} width={120} height={120} alt="Trezoa Logo" />;
 
 const ViewOriginalArtContentLink = ({ src }: { src: string }) => {
     if (!src) {

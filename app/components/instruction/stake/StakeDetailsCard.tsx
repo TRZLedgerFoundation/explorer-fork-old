@@ -1,4 +1,4 @@
-import { ParsedInstruction, ParsedTransaction, SignatureResult } from '@solana/web3.js';
+import { ParsedInstruction, ParsedTransaction, SignatureResult } from '@trezoa/web3.js';
 import { ParsedInfo } from '@validators/index';
 import React from 'react';
 import { create } from 'superstruct';

@@ -14,21 +14,21 @@ dependencies:
   '@blockworks-foundation/mango-client':
     specifier: ^3.6.7
     version: 3.6.7
-  '@bonfida/spl-name-service':
+  '@bonfida/tpl-name-service':
     specifier: 0.1.30
-    version: 0.1.30(@solana/buffer-layout@3.0.0)(@solana/spl-token@0.1.8)(@solana/web3.js@1.66.0)(bn.js@5.2.1)(borsh@0.7.0)
+    version: 0.1.30(@trezoa/buffer-layout@3.0.0)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0)(bn.js@5.2.1)(borsh@0.7.0)
   '@cloudflare/stream-react':
     specifier: ^1.2.0
     version: 1.2.0(react@18.2.0)
   '@metamask/jazzicon':
     specifier: ^2.0.0
     version: 2.0.0
-  '@metaplex-foundation/mpl-token-metadata':
+  '@trezoaplex-foundation/mpl-token-metadata':
     specifier: ^1.1.0
     version: 1.1.0
-  '@metaplex/js':
+  '@trezoaplex/js':
     specifier: ^4.12.0
-    version: 4.12.0(@metaplex-foundation/mpl-auction@0.0.2)(@metaplex-foundation/mpl-core@0.0.2)(@metaplex-foundation/mpl-metaplex@0.0.5)(@metaplex-foundation/mpl-token-metadata@1.1.0)(@metaplex-foundation/mpl-token-vault@0.0.2)(@solana/spl-token@0.1.8)(@solana/web3.js@1.66.0)
+    version: 4.12.0(@trezoaplex-foundation/mpl-auction@0.0.2)(@trezoaplex-foundation/mpl-core@0.0.2)(@trezoaplex-foundation/mpl-metaplex@0.0.5)(@trezoaplex-foundation/mpl-token-metadata@1.1.0)(@trezoaplex-foundation/mpl-token-vault@0.0.2)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0)
   '@project-serum/anchor':
     specifier: ^0.23.0
     version: 0.23.0
@@ -41,21 +41,21 @@ dependencies:
   '@react-hook/previous':
     specifier: ^1.0.1
     version: 1.0.1(react@18.2.0)
-  '@solana/buffer-layout':
+  '@trezoa/buffer-layout':
     specifier: ^3.0.0
     version: 3.0.0
-  '@solana/spl-account-compression':
+  '@trezoa/tpl-account-compression':
     specifier: ^0.1.8
-    version: 0.1.8(@solana/web3.js@1.66.0)
-  '@solana/spl-token':
+    version: 0.1.8(@trezoa/web3.js@1.66.0)
+  '@trezoa/tpl-token':
     specifier: ^0.1.8
     version: 0.1.8
-  '@solana/web3.js':
+  '@trezoa/web3.js':
     specifier: ^1.66.0
     version: 1.66.0
-  '@solflare-wallet/utl-sdk':
+  '@trzflare-wallet/utl-sdk':
     specifier: ^1.4.0
-    version: 1.4.0(@solana/web3.js@1.66.0)
+    version: 1.4.0(@trezoa/web3.js@1.66.0)
   '@types/bn.js':
     specifier: 5.1.0
     version: 5.1.0
@@ -147,14 +147,14 @@ dependencies:
     specifier: ^1.0.9
     version: 1.0.9(react@18.2.0)
   web3js-experimental:
-    specifier: npm:@solana/web3.js@2.0.0-experimental.7adc22b
-    version: /@solana/web3.js@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)(node-fetch@2.6.9)(ws@8.14.2)
+    specifier: npm:@trezoa/web3.js@2.0.0-experimental.7adc22b
+    version: /@trezoa/web3.js@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)(node-fetch@2.6.9)(ws@8.14.2)
 
 devDependencies:
-  '@solana/eslint-config-solana':
+  '@trezoa/eslint-config-trezoa':
     specifier: ^1.0.1
     version: 1.0.1(@typescript-eslint/eslint-plugin@5.59.2)(@typescript-eslint/parser@5.59.2)(eslint-plugin-jest@27.2.1)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-simple-import-sort@10.0.0)(eslint-plugin-sort-keys-fix@1.1.2)(eslint@8.39.0)(typescript@5.0.4)
-  '@solana/prettier-config-solana':
+  '@trezoa/prettier-config-trezoa':
     specifier: ^0.0.2
     version: 0.0.2(prettier@2.8.8)
   '@testing-library/jest-dom':
@@ -1120,9 +1120,9 @@ packages:
     dependencies:
       '@project-serum/anchor': 0.21.0
       '@project-serum/serum': 0.13.55
-      '@project-serum/sol-wallet-adapter': 0.2.6(@solana/web3.js@1.66.0)
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.66.0
+      '@project-serum/trz-wallet-adapter': 0.2.6(@trezoa/web3.js@1.66.0)
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.66.0
       big.js: 6.2.1
       bn.js: 5.2.1
       buffer-layout: 1.2.2
@@ -1136,18 +1136,18 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@bonfida/spl-name-service@0.1.30(@solana/buffer-layout@3.0.0)(@solana/spl-token@0.1.8)(@solana/web3.js@1.66.0)(bn.js@5.2.1)(borsh@0.7.0):
+  /@bonfida/tpl-name-service@0.1.30(@trezoa/buffer-layout@3.0.0)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0)(bn.js@5.2.1)(borsh@0.7.0):
     resolution: {integrity: sha512-0aSpymeNDq7rDSDEJgB6/qKyy3yUkHLQk7Jxwtmibfva3s1johEfFdl2kUDDPWi/ubgbxYjPxJRGrlGQNEmmQw==}
     peerDependencies:
-      '@solana/buffer-layout': ^4.0.0
-      '@solana/spl-token': 0.2.0
-      '@solana/web3.js': ^1.37.1
+      '@trezoa/buffer-layout': ^4.0.0
+      '@trezoa/tpl-token': 0.2.0
+      '@trezoa/web3.js': ^1.37.1
       bn.js: ^5.1.3
       borsh: ^0.7.0
     dependencies:
-      '@solana/buffer-layout': 3.0.0
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.66.0
+      '@trezoa/buffer-layout': 3.0.0
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
       borsh: 0.7.0
       ethers: 5.7.2
@@ -1160,11 +1160,11 @@ packages:
     resolution: {integrity: sha512-1qTDrwgmgeh0pO24JbeGt2W8GlpWYkVnQ8AhEZ02Lm00J7RALSyma3C5pNlKuvAQBczL1r9KhLr9KHK1og3J0g==}
     hasBin: true
     dependencies:
-      '@solana/wallet-adapter-base': 0.9.22(@solana/web3.js@1.66.0)
-      '@solana/web3.js': 1.66.0
+      '@trezoa/wallet-adapter-base': 0.9.22(@trezoa/web3.js@1.66.0)
+      '@trezoa/web3.js': 1.66.0
       '@supercharge/promise-pool': 2.4.0
       algosdk: 1.24.1
-      arbundles: 0.6.22(@solana/web3.js@1.66.0)(debug@4.3.4)
+      arbundles: 0.6.22(@trezoa/web3.js@1.66.0)(debug@4.3.4)
       arweave: 1.14.0
       async-retry: 1.3.3
       axios: 0.25.0(debug@4.3.4)
@@ -1927,11 +1927,11 @@ packages:
       mersenne-twister: 1.1.0
     dev: false
 
-  /@metaplex-foundation/beet-solana@0.1.1:
+  /@trezoaplex-foundation/beet-trezoa@0.1.1:
     resolution: {integrity: sha512-QV2DbxjaJWLkMvn12OC09g+r7a6R0uNwf8msYuOUSw4cG7amXzvFb7s0bh4IxY3Rk8/0ma0PfKi/FEdC7Hi4Pg==}
     dependencies:
-      '@metaplex-foundation/beet': 0.7.1
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.7.1
+      '@trezoa/web3.js': 1.66.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -1939,11 +1939,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/beet-solana@0.3.1:
+  /@trezoaplex-foundation/beet-trezoa@0.3.1:
     resolution: {integrity: sha512-tgyEl6dvtLln8XX81JyBvWjIiEcjTkUwZbrM5dIobTmoqMuGewSyk9CClno8qsMsFdB5T3jC91Rjeqmu/6xk2g==}
     dependencies:
-      '@metaplex-foundation/beet': 0.7.1
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.7.1
+      '@trezoa/web3.js': 1.66.0
       bs58: 5.0.0
       debug: 4.3.4
     transitivePeerDependencies:
@@ -1953,11 +1953,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/beet-solana@0.4.0:
+  /@trezoaplex-foundation/beet-trezoa@0.4.0:
     resolution: {integrity: sha512-B1L94N3ZGMo53b0uOSoznbuM5GBNJ8LwSeznxBxJ+OThvfHQ4B5oMUqb+0zdLRfkKGS7Q6tpHK9P+QK0j3w2cQ==}
     dependencies:
-      '@metaplex-foundation/beet': 0.7.1
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.7.1
+      '@trezoa/web3.js': 1.66.0
       bs58: 5.0.0
       debug: 4.3.4
     transitivePeerDependencies:
@@ -1967,7 +1967,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/beet@0.2.0:
+  /@trezoaplex-foundation/beet@0.2.0:
     resolution: {integrity: sha512-H570hkJxmx/FxET1OggPPLkPL7psYQa71rNI9NJjYRM8WXdrEvmI/IRIEUW2KR6RqwWWN3FvlRHnKoQUV/lQtA==}
     dependencies:
       ansicolors: 0.3.2
@@ -1977,7 +1977,7 @@ packages:
       - supports-color
     dev: false
 
-  /@metaplex-foundation/beet@0.4.0:
+  /@trezoaplex-foundation/beet@0.4.0:
     resolution: {integrity: sha512-2OAKJnLatCc3mBXNL0QmWVQKAWK2C7XDfepgL0p/9+8oSx4bmRAFHFqptl1A/C0U5O3dxGwKfmKluW161OVGcA==}
     dependencies:
       ansicolors: 0.3.2
@@ -1987,7 +1987,7 @@ packages:
       - supports-color
     dev: false
 
-  /@metaplex-foundation/beet@0.6.1:
+  /@trezoaplex-foundation/beet@0.6.1:
     resolution: {integrity: sha512-OYgnijLFzw0cdUlRKH5POp0unQECPOW9muJ2X3QIVyak5G6I6l/rKo72sICgPLIFKdmsi2jmnkuLY7wp14iXdw==}
     dependencies:
       ansicolors: 0.3.2
@@ -1997,7 +1997,7 @@ packages:
       - supports-color
     dev: false
 
-  /@metaplex-foundation/beet@0.7.1:
+  /@trezoaplex-foundation/beet@0.7.1:
     resolution: {integrity: sha512-hNCEnS2WyCiYyko82rwuISsBY3KYpe828ubsd2ckeqZr7tl0WVLivGkoyA/qdiaaHEBGdGl71OpfWa2rqL3DiA==}
     dependencies:
       ansicolors: 0.3.2
@@ -2007,23 +2007,23 @@ packages:
       - supports-color
     dev: false
 
-  /@metaplex-foundation/cusper@0.0.2:
+  /@trezoaplex-foundation/cusper@0.0.2:
     resolution: {integrity: sha512-S9RulC2fFCFOQraz61bij+5YCHhSO9llJegK8c8Y6731fSi6snUSQJdCUqYS8AIgR0TKbQvdvgSyIIdbDFZbBA==}
     dev: false
 
-  /@metaplex-foundation/js@0.11.7:
+  /@trezoaplex-foundation/js@0.11.7:
     resolution: {integrity: sha512-zL3Ac++8lUOoKjjhDArdNSimvVYcOqg4uhxfBVRKLV6H8q6E/sOepXuzYSLXxzYWdvapYWEPKFdEDFluYzk7DA==}
     engines: {node: ^14.0 || >=16.0}
     dependencies:
       '@aws-sdk/client-s3': 3.377.0
       '@bundlr-network/client': 0.7.17(debug@4.3.4)
-      '@metaplex-foundation/beet': 0.2.0
-      '@metaplex-foundation/beet-solana': 0.1.1
-      '@metaplex-foundation/mpl-auction-house': 2.5.1
-      '@metaplex-foundation/mpl-candy-machine': 4.7.1
-      '@metaplex-foundation/mpl-token-metadata': 2.13.0
-      '@solana/spl-token': 0.2.0
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.2.0
+      '@trezoaplex-foundation/beet-trezoa': 0.1.1
+      '@trezoaplex-foundation/mpl-auction-house': 2.5.1
+      '@trezoaplex-foundation/mpl-candy-machine': 4.7.1
+      '@trezoaplex-foundation/mpl-token-metadata': 2.13.0
+      '@trezoa/tpl-token': 0.2.0
+      '@trezoa/web3.js': 1.66.0
       abort-controller: 3.0.0
       bignumber.js: 9.0.2
       bn.js: 5.2.1
@@ -2044,14 +2044,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-auction-house@2.5.1:
+  /@trezoaplex-foundation/mpl-auction-house@2.5.1:
     resolution: {integrity: sha512-O+IAdYVaoOvgACB8pm+1lF5BNEjl0COkqny2Ho8KQZwka6aC/vHbZ239yRwAMtJhf5992BPFdT4oifjyE0O+Mw==}
     dependencies:
-      '@metaplex-foundation/beet': 0.6.1
-      '@metaplex-foundation/beet-solana': 0.3.1
-      '@metaplex-foundation/cusper': 0.0.2
-      '@solana/spl-token': 0.3.8(@solana/web3.js@1.66.0)
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.6.1
+      '@trezoaplex-foundation/beet-trezoa': 0.3.1
+      '@trezoaplex-foundation/cusper': 0.0.2
+      '@trezoa/tpl-token': 0.3.8(@trezoa/web3.js@1.66.0)
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
     transitivePeerDependencies:
       - bufferutil
@@ -2060,12 +2060,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-auction@0.0.2:
+  /@trezoaplex-foundation/mpl-auction@0.0.2:
     resolution: {integrity: sha512-4UDDi8OiQr+D6KrCNTRrqf/iDD6vi5kzRtMRtuNpywTyhX9hnbr1Zkc6Ncncbh9GZhbhcn+/h5wHgzh+xA6TnQ==}
     dependencies:
-      '@metaplex-foundation/mpl-core': 0.0.2
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.78.0
+      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2073,14 +2073,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-candy-machine@4.7.1:
+  /@trezoaplex-foundation/mpl-candy-machine@4.7.1:
     resolution: {integrity: sha512-tBNRAfBE/rYy9pe2aJD4gTFw+pgQ11o3AJjoYGB4+05ow0VjJMSt6kQGzHm2LRPgdLY4diKAq8qHvgsbV5ikNQ==}
     dependencies:
-      '@metaplex-foundation/beet': 0.4.0
-      '@metaplex-foundation/beet-solana': 0.3.1
-      '@metaplex-foundation/cusper': 0.0.2
-      '@metaplex-foundation/mpl-core': 0.6.1
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.4.0
+      '@trezoaplex-foundation/beet-trezoa': 0.3.1
+      '@trezoaplex-foundation/cusper': 0.0.2
+      '@trezoaplex-foundation/mpl-core': 0.6.1
+      '@trezoa/web3.js': 1.66.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2088,11 +2088,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-core@0.0.2:
+  /@trezoaplex-foundation/mpl-core@0.0.2:
     resolution: {integrity: sha512-UUJ4BlYiWdDegAWmjsNQiNehwYU3QfSFWs3sv4VX0J6/ZrQ28zqosGhQ+I2ZCTEy216finJ82sZWNjuwSWCYyQ==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
-      '@solana/web3.js': 1.66.0
+      '@trezoa/web3.js': 1.66.0
       bs58: 4.0.1
     transitivePeerDependencies:
       - bufferutil
@@ -2100,11 +2100,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-core@0.6.1:
+  /@trezoaplex-foundation/mpl-core@0.6.1:
     resolution: {integrity: sha512-6R4HkfAqU2EUakNbVLcCmka0YuQTLGTbHJ62ig765+NRWuB2HNGUQ1HfHcRsGnyxhlCvwKK79JE01XUjFE+dzw==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
-      '@solana/web3.js': 1.66.0
+      '@trezoa/web3.js': 1.66.0
       bs58: 4.0.1
     transitivePeerDependencies:
       - bufferutil
@@ -2112,15 +2112,15 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-metaplex@0.0.5:
+  /@trezoaplex-foundation/mpl-metaplex@0.0.5:
     resolution: {integrity: sha512-VRt3fiO/7/jcHwN+gWvTtpp+7wYhIcEDzMG1lOeV3yYyhz9fAT0E3LqEl2moifNTAopGCE4zYa84JA/OW+1YvA==}
     dependencies:
-      '@metaplex-foundation/mpl-auction': 0.0.2
-      '@metaplex-foundation/mpl-core': 0.0.2
-      '@metaplex-foundation/mpl-token-metadata': 0.0.2
-      '@metaplex-foundation/mpl-token-vault': 0.0.2
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.78.0
+      '@trezoaplex-foundation/mpl-auction': 0.0.2
+      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoaplex-foundation/mpl-token-metadata': 0.0.2
+      '@trezoaplex-foundation/mpl-token-vault': 0.0.2
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2128,12 +2128,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-token-metadata@0.0.2:
+  /@trezoaplex-foundation/mpl-token-metadata@0.0.2:
     resolution: {integrity: sha512-yKJPhFlX8MkNbSCi1iwHn4xKmguLK/xFhYa+RuYdL2seuT4CKXHj2CnR2AkcdQj46Za4/nR3jZcRFKq7QlnvBw==}
     dependencies:
-      '@metaplex-foundation/mpl-core': 0.0.2
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.78.0
+      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2141,26 +2141,26 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-token-metadata@1.1.0:
+  /@trezoaplex-foundation/mpl-token-metadata@1.1.0:
     resolution: {integrity: sha512-4tF+hO5H6eYJ49H72nvuID2nrD54X4yCxqKhbWLxqAI7v5vHSCH2QFVUnqbj3+P4ydxrNyof9MQm3qlzY8KU3g==}
     dependencies:
-      '@metaplex-foundation/mpl-core': 0.0.2
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.66.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-token-metadata@2.13.0:
+  /@trezoaplex-foundation/mpl-token-metadata@2.13.0:
     resolution: {integrity: sha512-Fl/8I0L9rv4bKTV/RAl5YIbJe9SnQPInKvLz+xR1fEc4/VQkuCn3RPgypfUMEKWmCznzaw4sApDxy6CFS4qmJw==}
     dependencies:
-      '@metaplex-foundation/beet': 0.7.1
-      '@metaplex-foundation/beet-solana': 0.4.0
-      '@metaplex-foundation/cusper': 0.0.2
-      '@solana/spl-token': 0.3.8(@solana/web3.js@1.78.0)
-      '@solana/web3.js': 1.78.0
+      '@trezoaplex-foundation/beet': 0.7.1
+      '@trezoaplex-foundation/beet-trezoa': 0.4.0
+      '@trezoaplex-foundation/cusper': 0.0.2
+      '@trezoa/tpl-token': 0.3.8(@trezoa/web3.js@1.78.0)
+      '@trezoa/web3.js': 1.78.0
       bn.js: 5.2.1
       debug: 4.3.4
     transitivePeerDependencies:
@@ -2170,12 +2170,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/mpl-token-vault@0.0.2:
+  /@trezoaplex-foundation/mpl-token-vault@0.0.2:
     resolution: {integrity: sha512-JiVcow8OzUGW0KTs/E1QrAdmYGqE9EGKE6cc2gxNNBYqDeVdjYlgEa64IiGvNF9rvbI2g2Z3jw0mYuA9LD9S/A==}
     dependencies:
-      '@metaplex-foundation/mpl-core': 0.0.2
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.78.0
+      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2183,61 +2183,61 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@metaplex-foundation/umi-options@0.8.9:
+  /@trezoaplex-foundation/umi-options@0.8.9:
     resolution: {integrity: sha512-jSQ61sZMPSAk/TXn8v8fPqtz3x8d0/blVZXLLbpVbo2/T5XobiI6/MfmlUosAjAUaQl6bHRF8aIIqZEFkJiy4A==}
     dev: false
 
-  /@metaplex-foundation/umi-public-keys@0.8.9:
+  /@trezoaplex-foundation/umi-public-keys@0.8.9:
     resolution: {integrity: sha512-CxMzN7dgVGOq9OcNCJe2casKUpJ3RmTVoOvDFyeoTQuK+vkZ1YSSahbqC1iGuHEtKTLSjtWjKvUU6O7zWFTw3Q==}
     dependencies:
-      '@metaplex-foundation/umi-serializers-encodings': 0.8.9
+      '@trezoaplex-foundation/umi-serializers-encodings': 0.8.9
     dev: false
 
-  /@metaplex-foundation/umi-serializers-core@0.8.9:
+  /@trezoaplex-foundation/umi-serializers-core@0.8.9:
     resolution: {integrity: sha512-WT82tkiYJ0Qmscp7uTj1Hz6aWQPETwaKLAENAUN5DeWghkuBKtuxyBKVvEOuoXerJSdhiAk0e8DWA4cxcTTQ/w==}
     dev: false
 
-  /@metaplex-foundation/umi-serializers-encodings@0.8.9:
+  /@trezoaplex-foundation/umi-serializers-encodings@0.8.9:
     resolution: {integrity: sha512-N3VWLDTJ0bzzMKcJDL08U3FaqRmwlN79FyE4BHj6bbAaJ9LEHjDQ9RJijZyWqTm0jE7I750fU7Ow5EZL38Xi6Q==}
     dependencies:
-      '@metaplex-foundation/umi-serializers-core': 0.8.9
+      '@trezoaplex-foundation/umi-serializers-core': 0.8.9
     dev: false
 
-  /@metaplex-foundation/umi-serializers-numbers@0.8.9:
+  /@trezoaplex-foundation/umi-serializers-numbers@0.8.9:
     resolution: {integrity: sha512-NtBf1fnVNQJHFQjLFzRu2i9GGnigb9hOm/Gfrk628d0q0tRJB7BOM3bs5C61VAs7kJs4yd+pDNVAERJkknQ7Lg==}
     dependencies:
-      '@metaplex-foundation/umi-serializers-core': 0.8.9
+      '@trezoaplex-foundation/umi-serializers-core': 0.8.9
     dev: false
 
-  /@metaplex-foundation/umi-serializers@0.8.9:
+  /@trezoaplex-foundation/umi-serializers@0.8.9:
     resolution: {integrity: sha512-Sve8Etm3zqvLSUfza+MYRkjTnCpiaAFT7VWdqeHzA3n58P0AfT3p74RrZwVt/UFkxI+ln8BslwBDJmwzcPkuHw==}
     dependencies:
-      '@metaplex-foundation/umi-options': 0.8.9
-      '@metaplex-foundation/umi-public-keys': 0.8.9
-      '@metaplex-foundation/umi-serializers-core': 0.8.9
-      '@metaplex-foundation/umi-serializers-encodings': 0.8.9
-      '@metaplex-foundation/umi-serializers-numbers': 0.8.9
+      '@trezoaplex-foundation/umi-options': 0.8.9
+      '@trezoaplex-foundation/umi-public-keys': 0.8.9
+      '@trezoaplex-foundation/umi-serializers-core': 0.8.9
+      '@trezoaplex-foundation/umi-serializers-encodings': 0.8.9
+      '@trezoaplex-foundation/umi-serializers-numbers': 0.8.9
     dev: false
 
-  /@metaplex/js@4.12.0(@metaplex-foundation/mpl-auction@0.0.2)(@metaplex-foundation/mpl-core@0.0.2)(@metaplex-foundation/mpl-metaplex@0.0.5)(@metaplex-foundation/mpl-token-metadata@1.1.0)(@metaplex-foundation/mpl-token-vault@0.0.2)(@solana/spl-token@0.1.8)(@solana/web3.js@1.66.0):
+  /@trezoaplex/js@4.12.0(@trezoaplex-foundation/mpl-auction@0.0.2)(@trezoaplex-foundation/mpl-core@0.0.2)(@trezoaplex-foundation/mpl-metaplex@0.0.5)(@trezoaplex-foundation/mpl-token-metadata@1.1.0)(@trezoaplex-foundation/mpl-token-vault@0.0.2)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-rIUTMXo5gIXFIZt08AEHyqH4oVoLL2dMYiNePQluw9pydesRym4jDayJ5POxEmKmyc6KGqVKw/YWUIivmUY5zg==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
-      '@metaplex-foundation/mpl-auction': ^0.0.2
-      '@metaplex-foundation/mpl-core': ^0.0.2
-      '@metaplex-foundation/mpl-metaplex': ^0.0.5
-      '@metaplex-foundation/mpl-token-metadata': ^0.0.2
-      '@metaplex-foundation/mpl-token-vault': ^0.0.2
-      '@solana/spl-token': ^0.1.8
-      '@solana/web3.js': ^1.30.2
+      '@trezoaplex-foundation/mpl-auction': ^0.0.2
+      '@trezoaplex-foundation/mpl-core': ^0.0.2
+      '@trezoaplex-foundation/mpl-metaplex': ^0.0.5
+      '@trezoaplex-foundation/mpl-token-metadata': ^0.0.2
+      '@trezoaplex-foundation/mpl-token-vault': ^0.0.2
+      '@trezoa/tpl-token': ^0.1.8
+      '@trezoa/web3.js': ^1.30.2
     dependencies:
-      '@metaplex-foundation/mpl-auction': 0.0.2
-      '@metaplex-foundation/mpl-core': 0.0.2
-      '@metaplex-foundation/mpl-metaplex': 0.0.5
-      '@metaplex-foundation/mpl-token-metadata': 1.1.0
-      '@metaplex-foundation/mpl-token-vault': 0.0.2
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/mpl-auction': 0.0.2
+      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoaplex-foundation/mpl-metaplex': 0.0.5
+      '@trezoaplex-foundation/mpl-token-metadata': 1.1.0
+      '@trezoaplex-foundation/mpl-token-vault': 0.0.2
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.66.0
       '@types/bs58': 4.0.1
       axios: 0.25.0(debug@4.3.4)
       bn.js: 5.2.1
@@ -2402,8 +2402,8 @@ packages:
     resolution: {integrity: sha512-oIdm4vTJkUy6GmE6JgqDAuQPKI7XM4TPJkjtoIzp69RZe0iAD9JP2XHx7lV1jLdYXeYHqDXfBt3zcq7W91K6PA==}
     engines: {node: '>=11'}
     dependencies:
-      '@project-serum/borsh': 0.2.5(@solana/web3.js@1.66.0)
-      '@solana/web3.js': 1.66.0
+      '@project-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
+      '@trezoa/web3.js': 1.66.0
       base64-js: 1.5.1
       bn.js: 5.2.1
       bs58: 4.0.1
@@ -2426,8 +2426,8 @@ packages:
     resolution: {integrity: sha512-flRuW/F+iC8mitNokx82LOXyND7Dyk6n5UUPJpQv/+NfySFrNFlzuQZaBZJ4CG5g9s8HS/uaaIz1nVkDR8V/QA==}
     engines: {node: '>=11'}
     dependencies:
-      '@project-serum/borsh': 0.2.5(@solana/web3.js@1.66.0)
-      '@solana/web3.js': 1.66.0
+      '@project-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
+      '@trezoa/web3.js': 1.66.0
       base64-js: 1.5.1
       bn.js: 5.2.1
       bs58: 4.0.1
@@ -2451,8 +2451,8 @@ packages:
     resolution: {integrity: sha512-LV2/ifZOJVFTZ4GbEloXln3iVfCvO1YM8i7BBCrUm4tehP7irMx4nr4/IabHWOzrQcQElsxSP/lb1tBp+2ff8A==}
     engines: {node: '>=11'}
     dependencies:
-      '@project-serum/borsh': 0.2.5(@solana/web3.js@1.66.0)
-      '@solana/web3.js': 1.66.0
+      '@project-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
+      '@trezoa/web3.js': 1.66.0
       base64-js: 1.5.1
       bn.js: 5.2.1
       bs58: 4.0.1
@@ -2472,13 +2472,13 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/borsh@0.2.5(@solana/web3.js@1.66.0):
+  /@project-serum/borsh@0.2.5(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-UmeUkUoKdQ7rhx6Leve1SssMR/Ghv8qrEiyywyxSWg7ooV7StdpPBhciiy5eB3T0qU1BXvdRNC8TdrkxK7WC5Q==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@solana/web3.js': ^1.2.0
+      '@trezoa/web3.js': ^1.2.0
     dependencies:
-      '@solana/web3.js': 1.66.0
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
       buffer-layout: 1.2.2
     dev: false
@@ -2488,8 +2488,8 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       '@project-serum/anchor': 0.11.1
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.66.0
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
       buffer-layout: 1.2.2
     transitivePeerDependencies:
@@ -2503,8 +2503,8 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       '@project-serum/anchor': 0.11.1
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.66.0
+      '@trezoa/tpl-token': 0.1.8
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
       buffer-layout: 1.2.2
     transitivePeerDependencies:
@@ -2513,13 +2513,13 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/sol-wallet-adapter@0.2.6(@solana/web3.js@1.66.0):
+  /@project-serum/trz-wallet-adapter@0.2.6(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-cpIb13aWPW8y4KzkZAPDgw+Kb+DXjCC6rZoH74MGm3I/6e/zKyGnfAuW5olb2zxonFqsYgnv7ev8MQnvSgJ3/g==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@solana/web3.js': ^1.5.0
+      '@trezoa/web3.js': ^1.5.0
     dependencies:
-      '@solana/web3.js': 1.66.0
+      '@trezoa/web3.js': 1.66.0
       bs58: 4.0.1
       eventemitter3: 4.0.7
     dev: false
@@ -3043,26 +3043,26 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@solana/addresses@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22):
+  /@trezoa/addresses@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22):
     resolution: {integrity: sha512-g63A8sUUvBaZszkQdpQSmp9boupfH1k33VXakH4QaV5d8JNY/cMsrqoOS2vcaGra4iNZ0aC4VNzlsEDRFLAfEQ==}
     dependencies:
-      '@solana/assertions': 2.0.0-experimental.7adc22b
-      '@solana/codecs-core': 2.0.0-experimental.7adc22b
-      '@solana/codecs-strings': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
+      '@trezoa/assertions': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-core': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-strings': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
     transitivePeerDependencies:
       - fastestsmallesttextencoderdecoder
     dev: false
 
-  /@solana/assertions@2.0.0-experimental.7adc22b:
+  /@trezoa/assertions@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-5oW04MYAyIMCC242YVaKVagcoOUVgybj7eyIB9P1ochCkrqEUc/RCX9jsSXEJI4TfB5qLSYLKrUR0ixVsAL8aA==}
     dev: false
 
-  /@solana/buffer-layout-utils@0.2.0:
+  /@trezoa/buffer-layout-utils@0.2.0:
     resolution: {integrity: sha512-szG4sxgJGktbuZYDg2FfNmkMi0DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn+chgprtWGioUAr4/g==}
     engines: {node: '>= 10'}
     dependencies:
-      '@solana/buffer-layout': 4.0.1
-      '@solana/web3.js': 1.66.0
+      '@trezoa/buffer-layout': 4.0.1
+      '@trezoa/web3.js': 1.66.0
       bigint-buffer: 1.1.5
       bignumber.js: 9.0.2
     transitivePeerDependencies:
@@ -3071,48 +3071,48 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/buffer-layout@3.0.0:
+  /@trezoa/buffer-layout@3.0.0:
     resolution: {integrity: sha512-MVdgAKKL39tEs0l8je0hKaXLQFb7Rdfb0Xg2LjFZd8Lfdazkg6xiS98uAZrEKvaoF3i4M95ei9RydkGIDMeo3w==}
     engines: {node: '>=5.10'}
     dependencies:
       buffer: 6.0.3
     dev: false
 
-  /@solana/buffer-layout@4.0.1:
+  /@trezoa/buffer-layout@4.0.1:
     resolution: {integrity: sha512-E1ImOIAD1tBZFRdjeM4/pzTiTApC0AOBGwyAMS4fwIodCWArzJ3DWdoh8cKxeFM2fElkxBh2Aqts1BPC373rHA==}
     engines: {node: '>=5.10'}
     dependencies:
       buffer: 6.0.3
     dev: false
 
-  /@solana/codecs-core@2.0.0-experimental.7adc22b:
+  /@trezoa/codecs-core@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-pswclTWoESUv4N1yv6zMMTAt8ocA8Er9sBaioEjfeMTIJNtW13Bt56CRFsBsjCQ/EJSGG7y1qtGKNYgZc8dhdA==}
     dev: false
 
-  /@solana/codecs-data-structures@2.0.0-experimental.7adc22b:
+  /@trezoa/codecs-data-structures@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-b9Rk6c1UELLK2gJBSJcY3ulyBUaEsrnDx4FnWy/MeeIjKxArC36XDwm0wyJ27ewevvt+UjCsib7Vn1AmBP51Mw==}
     dependencies:
-      '@solana/codecs-core': 2.0.0-experimental.7adc22b
-      '@solana/codecs-numbers': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-core': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-numbers': 2.0.0-experimental.7adc22b
     dev: false
 
-  /@solana/codecs-numbers@2.0.0-experimental.7adc22b:
+  /@trezoa/codecs-numbers@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-5iiX5UksPBiCFmkFLkeTcQTz/HTzHVBjvoor/mBK9waAAMkanKHRY9rSmkaipEipYLBJ9BtiOkC9XQVyqOlv1w==}
     dependencies:
-      '@solana/codecs-core': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-core': 2.0.0-experimental.7adc22b
     dev: false
 
-  /@solana/codecs-strings@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22):
+  /@trezoa/codecs-strings@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22):
     resolution: {integrity: sha512-kfn/oKYsaxDNN4bYe3hBkO0Bhri20ApQJOVQ+rHCnrje6uRioJhbNR5PlsLPetowwJxA6buA3uRHlZpQ7giFJw==}
     peerDependencies:
       fastestsmallesttextencoderdecoder: ^1.0.22
     dependencies:
-      '@solana/codecs-core': 2.0.0-experimental.7adc22b
-      '@solana/codecs-numbers': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-core': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-numbers': 2.0.0-experimental.7adc22b
       fastestsmallesttextencoderdecoder: 1.0.22
     dev: false
 
-  /@solana/eslint-config-solana@1.0.1(@typescript-eslint/eslint-plugin@5.59.2)(@typescript-eslint/parser@5.59.2)(eslint-plugin-jest@27.2.1)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-simple-import-sort@10.0.0)(eslint-plugin-sort-keys-fix@1.1.2)(eslint@8.39.0)(typescript@5.0.4):
+  /@trezoa/eslint-config-trezoa@1.0.1(@typescript-eslint/eslint-plugin@5.59.2)(@typescript-eslint/parser@5.59.2)(eslint-plugin-jest@27.2.1)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-simple-import-sort@10.0.0)(eslint-plugin-sort-keys-fix@1.1.2)(eslint@8.39.0)(typescript@5.0.4):
     resolution: {integrity: sha512-nH5gSHbxfycgEonMAt7onsrI0Y7PWh3b+KJSLoWbNnqmpQZGnh+O5MrgK45/7H4/qV6mZ4RNMwFagUt2mhZEsg==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.57.1
@@ -3134,21 +3134,21 @@ packages:
       typescript: 5.0.4
     dev: true
 
-  /@solana/functional@2.0.0-experimental.7adc22b:
+  /@trezoa/functional@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-876pYWab7LM+u2hahnS9qhzrsYkI+3TGpeOL7dW+iBZ/hhw0uVqXYXuLSeq6Yfdh6HQH3MEMv4xjB+th/n2fLQ==}
     dev: false
 
-  /@solana/instructions@2.0.0-experimental.7adc22b:
+  /@trezoa/instructions@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-gYDYZKK2+/OAJfBge4HP5YiQHvnA5AQEMgoTewWXu4cmMAd78e/3+WhdFaVVJjCJhTzMrRVg4wHqnHl6AQX7Qw==}
     dev: false
 
-  /@solana/keys@2.0.0-experimental.7adc22b:
+  /@trezoa/keys@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-7sV3uCVE9SL1VCMkzwWSM/NbUkzhwz8mXJM6bBn20gN8ytrHV4JI/VVAG+MvQ8IS9FRGDq05n4qAhPSXpghW2g==}
     dependencies:
-      '@solana/assertions': 2.0.0-experimental.7adc22b
+      '@trezoa/assertions': 2.0.0-experimental.7adc22b
     dev: false
 
-  /@solana/prettier-config-solana@0.0.2(prettier@2.8.8):
+  /@trezoa/prettier-config-trezoa@0.0.2(prettier@2.8.8):
     resolution: {integrity: sha512-F/e2UIJwb30Y8QjR9nr/OrJiCc8yjMkiP9Ctk4VYg+8jODNP31dx6s9mn4sbMFVYA0Km5EPZLN2xsZacBy0y/A==}
     peerDependencies:
       prettier: ^2.8.7
@@ -3156,13 +3156,13 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@solana/rpc-core@2.0.0-experimental.7adc22b:
+  /@trezoa/rpc-core@2.0.0-experimental.7adc22b:
     resolution: {integrity: sha512-Uvg4g3M6I0SX/hNywaSOXzr6yKqObJSJKqvONON+auaHfC2pF/QaNB9Y4IaDtFuUeP69HjGMUa+7T3AfgTILSA==}
     dependencies:
-      '@metaplex-foundation/umi-serializers': 0.8.9
+      '@trezoaplex-foundation/umi-serializers': 0.8.9
     dev: false
 
-  /@solana/rpc-transport@2.0.0-experimental.7adc22b(node-fetch@2.6.9)(ws@8.14.2):
+  /@trezoa/rpc-transport@2.0.0-experimental.7adc22b(node-fetch@2.6.9)(ws@8.14.2):
     resolution: {integrity: sha512-kZu0dlaM4ag8xANxfDuIQFKgXy1MXcHTJyL6j2Kh0vNRlV3sYlZm11B7YdLjealD7Ox29A56pl+OM55A+BJ4KA==}
     peerDependencies:
       node-fetch: ^2.6.9
@@ -3172,15 +3172,15 @@ packages:
       ws: 8.14.2
     dev: false
 
-  /@solana/spl-account-compression@0.1.8(@solana/web3.js@1.66.0):
+  /@trezoa/tpl-account-compression@0.1.8(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-vsvsx358pVFPtyNd8zIZy0lezR0NuvOykQ29Zq+8oto+kHfTXMGXXQ1tKHUYke6XkINIWLFVg/jDi+1D9RYaqQ==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.50.1
+      '@trezoa/web3.js': ^1.50.1
     dependencies:
-      '@metaplex-foundation/beet': 0.7.1
-      '@metaplex-foundation/beet-solana': 0.4.0
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/beet': 0.7.1
+      '@trezoaplex-foundation/beet-trezoa': 0.4.0
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
       borsh: 0.7.0
       js-sha3: 0.8.0
@@ -3192,12 +3192,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/spl-token@0.1.8:
+  /@trezoa/tpl-token@0.1.8:
     resolution: {integrity: sha512-LZmYCKcPQDtJgecvWOgT/cnoIQPWjdH+QVyzPcFvyDUiT0DiRjZaam4aqNUyvchLFhzgunv3d9xOoyE34ofdoQ==}
     engines: {node: '>= 10'}
     dependencies:
       '@babel/runtime': 7.21.5
-      '@solana/web3.js': 1.66.0
+      '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
       buffer: 6.0.3
       buffer-layout: 1.2.2
@@ -3208,13 +3208,13 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/spl-token@0.2.0:
+  /@trezoa/tpl-token@0.2.0:
     resolution: {integrity: sha512-RWcn31OXtdqIxmkzQfB2R+WpsJOVS6rKuvpxJFjvik2LyODd+WN58ZP3Rpjpro03fscGAkzlFuP3r42doRJgyQ==}
     engines: {node: '>= 14'}
     dependencies:
-      '@solana/buffer-layout': 4.0.1
-      '@solana/buffer-layout-utils': 0.2.0
-      '@solana/web3.js': 1.66.0
+      '@trezoa/buffer-layout': 4.0.1
+      '@trezoa/buffer-layout-utils': 0.2.0
+      '@trezoa/web3.js': 1.66.0
       start-server-and-test: 1.15.4
     transitivePeerDependencies:
       - bufferutil
@@ -3223,15 +3223,15 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/spl-token@0.3.8(@solana/web3.js@1.66.0):
+  /@trezoa/tpl-token@0.3.8(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-ogwGDcunP9Lkj+9CODOWMiVJEdRtqHAtX2rWF62KxnnSWtMZtV9rDhTrZFshiyJmxDnRL/1nKE1yJHg4jjs3gg==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.47.4
+      '@trezoa/web3.js': ^1.47.4
     dependencies:
-      '@solana/buffer-layout': 4.0.1
-      '@solana/buffer-layout-utils': 0.2.0
-      '@solana/web3.js': 1.66.0
+      '@trezoa/buffer-layout': 4.0.1
+      '@trezoa/buffer-layout-utils': 0.2.0
+      '@trezoa/web3.js': 1.66.0
       buffer: 6.0.3
     transitivePeerDependencies:
       - bufferutil
@@ -3239,15 +3239,15 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/spl-token@0.3.8(@solana/web3.js@1.78.0):
+  /@trezoa/tpl-token@0.3.8(@trezoa/web3.js@1.78.0):
     resolution: {integrity: sha512-ogwGDcunP9Lkj+9CODOWMiVJEdRtqHAtX2rWF62KxnnSWtMZtV9rDhTrZFshiyJmxDnRL/1nKE1yJHg4jjs3gg==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.47.4
+      '@trezoa/web3.js': ^1.47.4
     dependencies:
-      '@solana/buffer-layout': 4.0.1
-      '@solana/buffer-layout-utils': 0.2.0
-      '@solana/web3.js': 1.78.0
+      '@trezoa/buffer-layout': 4.0.1
+      '@trezoa/buffer-layout-utils': 0.2.0
+      '@trezoa/web3.js': 1.78.0
       buffer: 6.0.3
     transitivePeerDependencies:
       - bufferutil
@@ -3255,33 +3255,33 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/transactions@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22):
+  /@trezoa/transactions@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22):
     resolution: {integrity: sha512-WGTpZ4n9JBA9KyWvzfgrNLBMosLarDYig2iYYXGeAvn/2z36StoMTFebfEyx5CxVM2T6TaNxTlJybotnwMp6Ug==}
     dependencies:
-      '@metaplex-foundation/umi-serializers': 0.8.9
-      '@solana/addresses': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
-      '@solana/codecs-core': 2.0.0-experimental.7adc22b
-      '@solana/codecs-data-structures': 2.0.0-experimental.7adc22b
-      '@solana/codecs-numbers': 2.0.0-experimental.7adc22b
-      '@solana/keys': 2.0.0-experimental.7adc22b
+      '@trezoaplex-foundation/umi-serializers': 0.8.9
+      '@trezoa/addresses': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
+      '@trezoa/codecs-core': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-data-structures': 2.0.0-experimental.7adc22b
+      '@trezoa/codecs-numbers': 2.0.0-experimental.7adc22b
+      '@trezoa/keys': 2.0.0-experimental.7adc22b
     transitivePeerDependencies:
       - fastestsmallesttextencoderdecoder
     dev: false
 
-  /@solana/wallet-adapter-base@0.9.22(@solana/web3.js@1.66.0):
+  /@trezoa/wallet-adapter-base@0.9.22(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-xbLEZPGSJFvgTeldG9D55evhl7QK/3e/F7vhvcA97mEt1eieTgeKMnGlmmjs3yivI3/gtZNZeSk1XZLnhKcQvw==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.58.0
+      '@trezoa/web3.js': ^1.58.0
     dependencies:
-      '@solana/wallet-standard-features': 1.0.1
-      '@solana/web3.js': 1.66.0
+      '@trezoa/wallet-standard-features': 1.0.1
+      '@trezoa/web3.js': 1.66.0
       '@wallet-standard/base': 1.0.1
       '@wallet-standard/features': 1.0.3
       eventemitter3: 4.0.7
     dev: false
 
-  /@solana/wallet-standard-features@1.0.1:
+  /@trezoa/wallet-standard-features@1.0.1:
     resolution: {integrity: sha512-SUfx7KtBJ55XIj0qAhhVcC1I6MklAXqWFEz9hDHW+6YcJIyvfix/EilBhaBik1FJ2JT0zukpOfFv8zpuAbFRbw==}
     engines: {node: '>=16'}
     dependencies:
@@ -3289,7 +3289,7 @@ packages:
       '@wallet-standard/features': 1.0.3
     dev: false
 
-  /@solana/web3.js@1.66.0:
+  /@trezoa/web3.js@1.66.0:
     resolution: {integrity: sha512-hQCzWd9u100Ba3da52u7GeDRqSRwyFZtZkUj4j08GKSK3c3+ZQ6CQoN3HBXzfyjVKMTyRGKT0FlPA+hOX3kmOQ==}
     engines: {node: '>=12.20.0'}
     dependencies:
@@ -3297,7 +3297,7 @@ packages:
       '@noble/ed25519': 1.7.3
       '@noble/hashes': 1.3.0
       '@noble/secp256k1': 1.7.1
-      '@solana/buffer-layout': 4.0.1
+      '@trezoa/buffer-layout': 4.0.1
       bigint-buffer: 1.1.5
       bn.js: 5.2.1
       borsh: 0.7.0
@@ -3314,13 +3314,13 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/web3.js@1.78.0:
+  /@trezoa/web3.js@1.78.0:
     resolution: {integrity: sha512-CSjCjo+RELJ5puoZALfznN5EF0YvL1V8NQrQYovsdjE1lCV6SqbKAIZD0+9LlqCBoa1ibuUaR7G2SooYzvzmug==}
     dependencies:
       '@babel/runtime': 7.22.6
       '@noble/curves': 1.1.0
       '@noble/hashes': 1.3.0
-      '@solana/buffer-layout': 4.0.1
+      '@trezoa/buffer-layout': 4.0.1
       agentkeepalive: 4.3.0
       bigint-buffer: 1.1.5
       bn.js: 5.2.1
@@ -3339,17 +3339,17 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@solana/web3.js@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)(node-fetch@2.6.9)(ws@8.14.2):
+  /@trezoa/web3.js@2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)(node-fetch@2.6.9)(ws@8.14.2):
     resolution: {integrity: sha512-zLpftXBr+dGoKZvUaiGLbGPZWO2eY2EKAmw0UAXvC1bsGv7RRl4w9uYz3aQAmHT5zioTeMY+96iHdV1jP9TZFg==}
     dependencies:
-      '@metaplex-foundation/umi-serializers': 0.8.9
-      '@solana/addresses': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
-      '@solana/functional': 2.0.0-experimental.7adc22b
-      '@solana/instructions': 2.0.0-experimental.7adc22b
-      '@solana/keys': 2.0.0-experimental.7adc22b
-      '@solana/rpc-core': 2.0.0-experimental.7adc22b
-      '@solana/rpc-transport': 2.0.0-experimental.7adc22b(node-fetch@2.6.9)(ws@8.14.2)
-      '@solana/transactions': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
+      '@trezoaplex-foundation/umi-serializers': 0.8.9
+      '@trezoa/addresses': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
+      '@trezoa/functional': 2.0.0-experimental.7adc22b
+      '@trezoa/instructions': 2.0.0-experimental.7adc22b
+      '@trezoa/keys': 2.0.0-experimental.7adc22b
+      '@trezoa/rpc-core': 2.0.0-experimental.7adc22b
+      '@trezoa/rpc-transport': 2.0.0-experimental.7adc22b(node-fetch@2.6.9)(ws@8.14.2)
+      '@trezoa/transactions': 2.0.0-experimental.7adc22b(fastestsmallesttextencoderdecoder@1.0.22)
       fast-stable-stringify: 1.0.0
     transitivePeerDependencies:
       - fastestsmallesttextencoderdecoder
@@ -3357,13 +3357,13 @@ packages:
       - ws
     dev: false
 
-  /@solflare-wallet/utl-sdk@1.4.0(@solana/web3.js@1.66.0):
+  /@trzflare-wallet/utl-sdk@1.4.0(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-0E3s+fXs5XMGBNrXGB4XSH4+sPgLanbBEVyz227KJyxSIgiRdQMcM2Yv/KdnMHNmhYoR/aPpH6TH115SIJqM0A==}
     peerDependencies:
-      '@solana/web3.js': '*'
+      '@trezoa/web3.js': '*'
     dependencies:
-      '@metaplex-foundation/js': 0.11.7
-      '@solana/web3.js': 1.66.0
+      '@trezoaplex-foundation/js': 0.11.7
+      '@trezoa/web3.js': 1.66.0
       axios: 0.27.2(debug@4.3.4)
       eventemitter3: 5.0.1
       lodash: 4.17.21
@@ -3935,12 +3935,12 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  /arbundles@0.6.22(@solana/web3.js@1.66.0)(debug@4.3.4):
+  /arbundles@0.6.22(@trezoa/web3.js@1.66.0)(debug@4.3.4):
     resolution: {integrity: sha512-QlSavBHk59mNqgQ6ScxlqaBJlDbSmSrK/uTcF3HojLAZ/4aufTkVTBjl1hSfZ/ZN45oIPgJC05R8SmVARF+8VA==}
     dependencies:
       '@noble/ed25519': 1.7.3
       '@randlabs/myalgo-connect': 1.4.2
-      '@solana/wallet-adapter-base': 0.9.22(@solana/web3.js@1.66.0)
+      '@trezoa/wallet-adapter-base': 0.9.22(@trezoa/web3.js@1.66.0)
       algosdk: 1.24.1
       arweave: 1.14.0
       arweave-stream-tx: 1.2.2(arweave@1.14.0)
@@ -3955,7 +3955,7 @@ packages:
       secp256k1: 4.0.3
       tmp-promise: 3.0.3
     transitivePeerDependencies:
-      - '@solana/web3.js'
+      - '@trezoa/web3.js'
       - bufferutil
       - debug
       - encoding
@@ -7268,7 +7268,7 @@ packages:
     dev: false
 
   /no-case@3.0.4:
-    resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
+    resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTTRZJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
     dependencies:
       lower-case: 2.0.2
       tslib: 2.5.0

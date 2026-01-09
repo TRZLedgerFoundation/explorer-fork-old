@@ -1,4 +1,4 @@
-import { LAMPORTS_PER_SOL, lamportsToSol } from '@utils/index';
+import { LAMPORTS_PER_TRZ, lamportsToSol } from '@utils/index';
 
 describe('lamportsToSol', () => {
     it('0 lamports', () => {
@@ -13,11 +13,11 @@ describe('lamportsToSol', () => {
         expect(lamportsToSol(BigInt(-1))).toBe(-0.000000001);
     });
 
-    it('1 SOL', () => {
-        expect(lamportsToSol(LAMPORTS_PER_SOL)).toBe(1.0);
-        expect(lamportsToSol(BigInt(LAMPORTS_PER_SOL))).toBe(1.0);
-        expect(lamportsToSol(-LAMPORTS_PER_SOL)).toBe(-1.0);
-        expect(lamportsToSol(BigInt(-LAMPORTS_PER_SOL))).toBe(-1.0);
+    it('1 TRZ', () => {
+        expect(lamportsToSol(LAMPORTS_PER_TRZ)).toBe(1.0);
+        expect(lamportsToSol(BigInt(LAMPORTS_PER_TRZ))).toBe(1.0);
+        expect(lamportsToSol(-LAMPORTS_PER_TRZ)).toBe(-1.0);
+        expect(lamportsToSol(BigInt(-LAMPORTS_PER_TRZ))).toBe(-1.0);
     });
 
     it('u64::MAX lamports', () => {

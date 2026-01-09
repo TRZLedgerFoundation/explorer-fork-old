@@ -8,7 +8,7 @@ import { useFetchAccountInfo } from '@providers/accounts';
 import { FetchStatus } from '@providers/cache';
 import { useFetchRawTransaction, useRawTransactionDetails } from '@providers/transactions/raw';
 import usePrevious from '@react-hook/previous';
-import { PACKET_DATA_SIZE, VersionedMessage } from '@solana/web3.js';
+import { PACKET_DATA_SIZE, VersionedMessage } from '@trezoa/web3.js';
 import { useClusterPath } from '@utils/url';
 import base58 from 'bs58';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';

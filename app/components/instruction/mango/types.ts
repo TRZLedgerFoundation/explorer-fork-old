@@ -8,7 +8,7 @@ import {
     SpotMarketConfig,
 } from '@blockworks-foundation/mango-client';
 import { Market } from '@project-serum/serum';
-import { AccountInfo, AccountMeta, Connection, PublicKey, TransactionInstruction } from '@solana/web3.js';
+import { AccountInfo, AccountMeta, Connection, PublicKey, TransactionInstruction } from '@trezoa/web3.js';
 
 // note: mainnet.1 suffices since its a superset of mainnet.0
 const mangoGroups = Config.ids().groups.filter(group => group.name !== 'mainnet.0');

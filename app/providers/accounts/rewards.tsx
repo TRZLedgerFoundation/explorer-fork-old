@@ -4,7 +4,7 @@ import { ActionType } from '@providers/block';
 import * as Cache from '@providers/cache';
 import { FetchStatus } from '@providers/cache';
 import { useCluster } from '@providers/cluster';
-import { Connection, InflationReward, PublicKey } from '@solana/web3.js';
+import { Connection, InflationReward, PublicKey } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import React from 'react';
 

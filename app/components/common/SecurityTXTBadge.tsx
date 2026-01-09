@@ -1,4 +1,4 @@
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { fromProgramData } from '@utils/security-txt';
 import { useClusterPath } from '@utils/url';
 import { ProgramDataAccountInfo } from '@validators/accounts/upgradeable-program';

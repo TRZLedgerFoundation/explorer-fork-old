@@ -1,8 +1,8 @@
 'use client';
 
-import { Connection, programs } from '@metaplex/js';
+import { Connection, programs } from '@trezoaplex/js';
 import { useCluster } from '@providers/cluster';
-import { PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@trezoa/web3.js';
 import { displayAddress, TokenLabelInfo } from '@utils/tx';
 import { useClusterPath } from '@utils/url';
 import Link from 'next/link';

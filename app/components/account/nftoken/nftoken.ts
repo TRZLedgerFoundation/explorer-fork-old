@@ -1,4 +1,4 @@
-import { Connection, PublicKey } from '@solana/web3.js';
+import { Connection, PublicKey } from '@trezoa/web3.js';
 import axios from 'axios';
 import bs58 from 'bs58';
 import pLimit from 'p-limit';

@@ -7,8 +7,8 @@ type Props = Readonly<{
 }>;
 
 export const metadata = {
-    description: `Stake history for each epoch on Solana`,
-    title: `Stake History | Solana`,
+    description: `Stake history for each epoch on Trezoa`,
+    title: `Stake History | Trezoa`,
 };
 
 export default function StakeHistoryPage(props: Props) {

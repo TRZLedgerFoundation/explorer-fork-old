@@ -1,6 +1,6 @@
 'use client';
 
-import { MetadataJson, programs } from '@metaplex/js';
+import { MetadataJson, programs } from '@trezoaplex/js';
 import getEditionInfo, { EditionInfo } from '@providers/accounts/utils/getEditionInfo';
 import * as Cache from '@providers/cache';
 import { ActionType, FetchStatus } from '@providers/cache';
@@ -13,7 +13,7 @@ import {
     PublicKey,
     StakeActivationData,
     SystemProgram,
-} from '@solana/web3.js';
+} from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { pubkeyToString } from '@utils/index';
 import { assertIsTokenProgram, TokenProgram } from '@utils/programs';
@@ -262,7 +262,7 @@ async function fetchMultipleAccounts({
                         }
                     }
 
-                    // If we cannot parse account layout as native spl account
+                    // If we cannot parse account layout as native tpl account
                     // then keep raw data for other components to decode
                     let rawData: Buffer | undefined;
                     if (!parsedData && !('parsed' in result.data) && dataMode !== 'skip') {
@@ -383,8 +383,8 @@ async function handleParsedAccountData(
             };
         }
 
-        case 'spl-token':
-        case 'spl-token-2022': {
+        case 'tpl-token':
+        case 'tpl-token-2022': {
             const parsed = create(info, TokenAccount);
             let nftData;
 

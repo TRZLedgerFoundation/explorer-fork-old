@@ -4,10 +4,10 @@ import { useCluster } from '@providers/cluster';
 import { Cluster } from '@utils/cluster';
 import React from 'react';
 import useTabVisibility from 'use-tab-visibility';
-import { createDefaultRpcTransport, createSolanaRpc } from 'web3js-experimental';
+import { createDefaultRpcTransport, createTrezoaRpc } from 'web3js-experimental';
 
-import { DashboardInfo, DashboardInfoActionType, dashboardInfoReducer, EpochInfo } from './solanaDashboardInfo';
-import { PerformanceInfo, PerformanceInfoActionType, performanceInfoReducer, PerformanceSample } from './solanaPerformanceInfo';
+import { DashboardInfo, DashboardInfoActionType, dashboardInfoReducer, EpochInfo } from './trezoaDashboardInfo';
+import { PerformanceInfo, PerformanceInfoActionType, performanceInfoReducer, PerformanceSample } from './trezoaPerformanceInfo';
 
 export const PERF_UPDATE_SEC = 5;
 export const SAMPLE_HISTORY_HOURS = 6;
@@ -67,7 +67,7 @@ const PerformanceContext = React.createContext<PerformanceState | undefined>(und
 
 type Props = { children: React.ReactNode };
 
-export function SolanaClusterStatsProvider({ children }: Props) {
+export function TrezoaClusterStatsProvider({ children }: Props) {
     const { cluster, url } = useCluster();
     const [active, setActive] = React.useState(false);
     const [dashboardInfo, dispatchDashboardInfo] = React.useReducer(dashboardInfoReducer, initialDashboardInfo);
@@ -77,7 +77,7 @@ export function SolanaClusterStatsProvider({ children }: Props) {
         if (!active || !isTabVisible || !url) return;
 
         const transport = createDefaultRpcTransport({ url });
-        const rpc = createSolanaRpc({ transport });
+        const rpc = createTrezoaRpc({ transport });
 
         let lastSlot: bigint | null = null;
         let stale = false;

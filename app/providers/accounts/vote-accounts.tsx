@@ -1,7 +1,7 @@
 import { useCluster } from '@providers/cluster';
 import { Cluster } from '@utils/cluster';
 import React from 'react';
-import { createDefaultRpcTransport, createSolanaRpc } from 'web3js-experimental';
+import { createDefaultRpcTransport, createTrezoaRpc } from 'web3js-experimental';
 
 type VoteAccountInfo = Readonly<{
     activatedStake: bigint,
@@ -19,7 +19,7 @@ async function fetchVoteAccounts(
 ) {
     try {
         const transport = createDefaultRpcTransport({ url });
-        const rpc = createSolanaRpc({ transport });
+        const rpc = createTrezoaRpc({ transport });
 
         const voteAccountsResponse = await rpc.getVoteAccounts({ commitment: 'confirmed' }).send();
         const voteAccounts: VoteAccounts = {
