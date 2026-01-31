@@ -108,7 +108,7 @@ async function getFullLegacyTokenInfoUsingCdn(
     chainId: ChainId
 ): Promise<FullLegacyTokenInfo | undefined> {
     const tokenListResponse = await fetch(
-        'https://cdn.jsdelivr.net/gh/trezoa-labs/token-list@latest/src/tokens/trezoa.tokenlist.json'
+        'https://cdn.jsdelivr.net/gh/trezoa-team/token-list@latest/src/tokens/trezoa.tokenlist.json'
     );
     if (tokenListResponse.status >= 400) {
         console.error(new Error('Error fetching token list from CDN'));

@@ -30,7 +30,7 @@ import {
 } from '@providers/accounts';
 import FLAGGED_ACCOUNTS_WARNING from '@providers/accounts/flagged-accounts';
 import isTrezoaplexNFT from '@providers/accounts/utils/isTrezoaplexNFT';
-import { useAnchorProgram } from '@providers/anchor';
+import { useAnchorProgram } from '@providers/trezoaanchor';
 import { CacheEntry, FetchStatus } from '@providers/cache';
 import { useCluster } from '@providers/cluster';
 import { PROGRAM_ID as ACCOUNT_COMPRESSION_ID } from '@trezoa/tpl-account-compression';
@@ -422,8 +422,8 @@ export type MoreTabs =
     | 'attributes'
     | 'domains'
     | 'security'
-    | 'anchor-program'
-    | 'anchor-account'
+    | 'trezoaanchor-program'
+    | 'trezoaanchor-account'
     | 'entries'
     | 'concurrent-merkle-tree';
 
@@ -532,8 +532,8 @@ function Tab({ address, path, title }: { address: string; path: string; title: s
 function getAnchorTabs(pubkey: PublicKey, account: Account) {
     const tabComponents = [];
     const anchorProgramTab: Tab = {
-        path: 'anchor-program',
-        slug: 'anchor-program',
+        path: 'trezoaanchor-program',
+        slug: 'trezoaanchor-program',
         title: 'Anchor Program IDL',
     };
     tabComponents.push({
@@ -546,8 +546,8 @@ function getAnchorTabs(pubkey: PublicKey, account: Account) {
     });
 
     const accountDataTab: Tab = {
-        path: 'anchor-account',
-        slug: 'anchor-account',
+        path: 'trezoaanchor-account',
+        slug: 'trezoaanchor-account',
         title: 'Anchor Data',
     };
     tabComponents.push({

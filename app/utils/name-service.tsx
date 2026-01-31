@@ -47,7 +47,7 @@ export const useUserDomains = (userAddress: string): [DomainInfo[] | null, boole
                         const domainName = await performReverseLookup(connection, address);
                         return {
                             address,
-                            name: `${domainName}.sol`,
+                            name: `${domainName}.trz`,
                         };
                     })
                 );

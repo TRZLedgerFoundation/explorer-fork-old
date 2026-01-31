@@ -23,16 +23,16 @@ dependencies:
   '@metamask/jazzicon':
     specifier: ^2.0.0
     version: 2.0.0
-  '@trezoaplex-foundation/mpl-token-metadata':
+  '@trezoaplex-foundation/tpl-token-metadata':
     specifier: ^1.1.0
     version: 1.1.0
   '@trezoaplex/js':
     specifier: ^4.12.0
-    version: 4.12.0(@trezoaplex-foundation/mpl-auction@0.0.2)(@trezoaplex-foundation/mpl-core@0.0.2)(@trezoaplex-foundation/mpl-metaplex@0.0.5)(@trezoaplex-foundation/mpl-token-metadata@1.1.0)(@trezoaplex-foundation/mpl-token-vault@0.0.2)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0)
-  '@project-serum/anchor':
+    version: 4.12.0(@trezoaplex-foundation/tpl-auction@0.0.2)(@trezoaplex-foundation/tpl-core@0.0.2)(@trezoaplex-foundation/tpl-trezoaplex@0.0.5)(@trezoaplex-foundation/tpl-token-metadata@1.1.0)(@trezoaplex-foundation/tpl-token-vault@0.0.2)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0)
+  '@trezoa-serum/trezoaanchor':
     specifier: ^0.23.0
     version: 0.23.0
-  '@project-serum/serum':
+  '@trezoa-serum/serum':
     specifier: ^0.13.61
     version: 0.13.61
   '@react-hook/debounce':
@@ -1118,9 +1118,9 @@ packages:
   /@blockworks-foundation/mango-client@3.6.7:
     resolution: {integrity: sha512-AKPFzkDArQ4w1eO9xYQPwXoxuzpKNKWyryDmtNLm3YSgzpNQbKAfD6VH9Hxw3m3Kcq5YzYH9pIHSae+qFgOTvw==}
     dependencies:
-      '@project-serum/anchor': 0.21.0
-      '@project-serum/serum': 0.13.55
-      '@project-serum/trz-wallet-adapter': 0.2.6(@trezoa/web3.js@1.66.0)
+      '@trezoa-serum/trezoaanchor': 0.21.0
+      '@trezoa-serum/serum': 0.13.55
+      '@trezoa-serum/trz-wallet-adapter': 0.2.6(@trezoa/web3.js@1.66.0)
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.66.0
       big.js: 6.2.1
@@ -2019,9 +2019,9 @@ packages:
       '@bundlr-network/client': 0.7.17(debug@4.3.4)
       '@trezoaplex-foundation/beet': 0.2.0
       '@trezoaplex-foundation/beet-trezoa': 0.1.1
-      '@trezoaplex-foundation/mpl-auction-house': 2.5.1
-      '@trezoaplex-foundation/mpl-candy-machine': 4.7.1
-      '@trezoaplex-foundation/mpl-token-metadata': 2.13.0
+      '@trezoaplex-foundation/tpl-auction-house': 2.5.1
+      '@trezoaplex-foundation/tpl-candy-machine': 4.7.1
+      '@trezoaplex-foundation/tpl-token-metadata': 2.13.0
       '@trezoa/tpl-token': 0.2.0
       '@trezoa/web3.js': 1.66.0
       abort-controller: 3.0.0
@@ -2044,7 +2044,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-auction-house@2.5.1:
+  /@trezoaplex-foundation/tpl-auction-house@2.5.1:
     resolution: {integrity: sha512-O+IAdYVaoOvgACB8pm+1lF5BNEjl0COkqny2Ho8KQZwka6aC/vHbZ239yRwAMtJhf5992BPFdT4oifjyE0O+Mw==}
     dependencies:
       '@trezoaplex-foundation/beet': 0.6.1
@@ -2060,10 +2060,10 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-auction@0.0.2:
+  /@trezoaplex-foundation/tpl-auction@0.0.2:
     resolution: {integrity: sha512-4UDDi8OiQr+D6KrCNTRrqf/iDD6vi5kzRtMRtuNpywTyhX9hnbr1Zkc6Ncncbh9GZhbhcn+/h5wHgzh+xA6TnQ==}
     dependencies:
-      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoaplex-foundation/tpl-core': 0.0.2
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
@@ -2073,13 +2073,13 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-candy-machine@4.7.1:
+  /@trezoaplex-foundation/tpl-candy-machine@4.7.1:
     resolution: {integrity: sha512-tBNRAfBE/rYy9pe2aJD4gTFw+pgQ11o3AJjoYGB4+05ow0VjJMSt6kQGzHm2LRPgdLY4diKAq8qHvgsbV5ikNQ==}
     dependencies:
       '@trezoaplex-foundation/beet': 0.4.0
       '@trezoaplex-foundation/beet-trezoa': 0.3.1
       '@trezoaplex-foundation/cusper': 0.0.2
-      '@trezoaplex-foundation/mpl-core': 0.6.1
+      '@trezoaplex-foundation/tpl-core': 0.6.1
       '@trezoa/web3.js': 1.66.0
     transitivePeerDependencies:
       - bufferutil
@@ -2088,7 +2088,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-core@0.0.2:
+  /@trezoaplex-foundation/tpl-core@0.0.2:
     resolution: {integrity: sha512-UUJ4BlYiWdDegAWmjsNQiNehwYU3QfSFWs3sv4VX0J6/ZrQ28zqosGhQ+I2ZCTEy216finJ82sZWNjuwSWCYyQ==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
@@ -2100,7 +2100,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-core@0.6.1:
+  /@trezoaplex-foundation/tpl-core@0.6.1:
     resolution: {integrity: sha512-6R4HkfAqU2EUakNbVLcCmka0YuQTLGTbHJ62ig765+NRWuB2HNGUQ1HfHcRsGnyxhlCvwKK79JE01XUjFE+dzw==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
@@ -2112,13 +2112,13 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-metaplex@0.0.5:
+  /@trezoaplex-foundation/tpl-trezoaplex@0.0.5:
     resolution: {integrity: sha512-VRt3fiO/7/jcHwN+gWvTtpp+7wYhIcEDzMG1lOeV3yYyhz9fAT0E3LqEl2moifNTAopGCE4zYa84JA/OW+1YvA==}
     dependencies:
-      '@trezoaplex-foundation/mpl-auction': 0.0.2
-      '@trezoaplex-foundation/mpl-core': 0.0.2
-      '@trezoaplex-foundation/mpl-token-metadata': 0.0.2
-      '@trezoaplex-foundation/mpl-token-vault': 0.0.2
+      '@trezoaplex-foundation/tpl-auction': 0.0.2
+      '@trezoaplex-foundation/tpl-core': 0.0.2
+      '@trezoaplex-foundation/tpl-token-metadata': 0.0.2
+      '@trezoaplex-foundation/tpl-token-vault': 0.0.2
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
@@ -2128,10 +2128,10 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-token-metadata@0.0.2:
+  /@trezoaplex-foundation/tpl-token-metadata@0.0.2:
     resolution: {integrity: sha512-yKJPhFlX8MkNbSCi1iwHn4xKmguLK/xFhYa+RuYdL2seuT4CKXHj2CnR2AkcdQj46Za4/nR3jZcRFKq7QlnvBw==}
     dependencies:
-      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoaplex-foundation/tpl-core': 0.0.2
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
@@ -2141,10 +2141,10 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-token-metadata@1.1.0:
+  /@trezoaplex-foundation/tpl-token-metadata@1.1.0:
     resolution: {integrity: sha512-4tF+hO5H6eYJ49H72nvuID2nrD54X4yCxqKhbWLxqAI7v5vHSCH2QFVUnqbj3+P4ydxrNyof9MQm3qlzY8KU3g==}
     dependencies:
-      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoaplex-foundation/tpl-core': 0.0.2
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.66.0
     transitivePeerDependencies:
@@ -2153,7 +2153,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-token-metadata@2.13.0:
+  /@trezoaplex-foundation/tpl-token-metadata@2.13.0:
     resolution: {integrity: sha512-Fl/8I0L9rv4bKTV/RAl5YIbJe9SnQPInKvLz+xR1fEc4/VQkuCn3RPgypfUMEKWmCznzaw4sApDxy6CFS4qmJw==}
     dependencies:
       '@trezoaplex-foundation/beet': 0.7.1
@@ -2170,10 +2170,10 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@trezoaplex-foundation/mpl-token-vault@0.0.2:
+  /@trezoaplex-foundation/tpl-token-vault@0.0.2:
     resolution: {integrity: sha512-JiVcow8OzUGW0KTs/E1QrAdmYGqE9EGKE6cc2gxNNBYqDeVdjYlgEa64IiGvNF9rvbI2g2Z3jw0mYuA9LD9S/A==}
     dependencies:
-      '@trezoaplex-foundation/mpl-core': 0.0.2
+      '@trezoaplex-foundation/tpl-core': 0.0.2
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.78.0
     transitivePeerDependencies:
@@ -2219,23 +2219,23 @@ packages:
       '@trezoaplex-foundation/umi-serializers-numbers': 0.8.9
     dev: false
 
-  /@trezoaplex/js@4.12.0(@trezoaplex-foundation/mpl-auction@0.0.2)(@trezoaplex-foundation/mpl-core@0.0.2)(@trezoaplex-foundation/mpl-metaplex@0.0.5)(@trezoaplex-foundation/mpl-token-metadata@1.1.0)(@trezoaplex-foundation/mpl-token-vault@0.0.2)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0):
+  /@trezoaplex/js@4.12.0(@trezoaplex-foundation/tpl-auction@0.0.2)(@trezoaplex-foundation/tpl-core@0.0.2)(@trezoaplex-foundation/tpl-trezoaplex@0.0.5)(@trezoaplex-foundation/tpl-token-metadata@1.1.0)(@trezoaplex-foundation/tpl-token-vault@0.0.2)(@trezoa/tpl-token@0.1.8)(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-rIUTMXo5gIXFIZt08AEHyqH4oVoLL2dMYiNePQluw9pydesRym4jDayJ5POxEmKmyc6KGqVKw/YWUIivmUY5zg==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
-      '@trezoaplex-foundation/mpl-auction': ^0.0.2
-      '@trezoaplex-foundation/mpl-core': ^0.0.2
-      '@trezoaplex-foundation/mpl-metaplex': ^0.0.5
-      '@trezoaplex-foundation/mpl-token-metadata': ^0.0.2
-      '@trezoaplex-foundation/mpl-token-vault': ^0.0.2
+      '@trezoaplex-foundation/tpl-auction': ^0.0.2
+      '@trezoaplex-foundation/tpl-core': ^0.0.2
+      '@trezoaplex-foundation/tpl-trezoaplex': ^0.0.5
+      '@trezoaplex-foundation/tpl-token-metadata': ^0.0.2
+      '@trezoaplex-foundation/tpl-token-vault': ^0.0.2
       '@trezoa/tpl-token': ^0.1.8
       '@trezoa/web3.js': ^1.30.2
     dependencies:
-      '@trezoaplex-foundation/mpl-auction': 0.0.2
-      '@trezoaplex-foundation/mpl-core': 0.0.2
-      '@trezoaplex-foundation/mpl-metaplex': 0.0.5
-      '@trezoaplex-foundation/mpl-token-metadata': 1.1.0
-      '@trezoaplex-foundation/mpl-token-vault': 0.0.2
+      '@trezoaplex-foundation/tpl-auction': 0.0.2
+      '@trezoaplex-foundation/tpl-core': 0.0.2
+      '@trezoaplex-foundation/tpl-trezoaplex': 0.0.5
+      '@trezoaplex-foundation/tpl-token-metadata': 1.1.0
+      '@trezoaplex-foundation/tpl-token-vault': 0.0.2
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.66.0
       '@types/bs58': 4.0.1
@@ -2398,11 +2398,11 @@ packages:
     resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
     dev: true
 
-  /@project-serum/anchor@0.11.1:
+  /@trezoa-serum/trezoaanchor@0.11.1:
     resolution: {integrity: sha512-oIdm4vTJkUy6GmE6JgqDAuQPKI7XM4TPJkjtoIzp69RZe0iAD9JP2XHx7lV1jLdYXeYHqDXfBt3zcq7W91K6PA==}
     engines: {node: '>=11'}
     dependencies:
-      '@project-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
+      '@trezoa-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
       '@trezoa/web3.js': 1.66.0
       base64-js: 1.5.1
       bn.js: 5.2.1
@@ -2422,11 +2422,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/anchor@0.21.0:
+  /@trezoa-serum/trezoaanchor@0.21.0:
     resolution: {integrity: sha512-flRuW/F+iC8mitNokx82LOXyND7Dyk6n5UUPJpQv/+NfySFrNFlzuQZaBZJ4CG5g9s8HS/uaaIz1nVkDR8V/QA==}
     engines: {node: '>=11'}
     dependencies:
-      '@project-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
+      '@trezoa-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
       '@trezoa/web3.js': 1.66.0
       base64-js: 1.5.1
       bn.js: 5.2.1
@@ -2447,11 +2447,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/anchor@0.23.0:
+  /@trezoa-serum/trezoaanchor@0.23.0:
     resolution: {integrity: sha512-LV2/ifZOJVFTZ4GbEloXln3iVfCvO1YM8i7BBCrUm4tehP7irMx4nr4/IabHWOzrQcQElsxSP/lb1tBp+2ff8A==}
     engines: {node: '>=11'}
     dependencies:
-      '@project-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
+      '@trezoa-serum/borsh': 0.2.5(@trezoa/web3.js@1.66.0)
       '@trezoa/web3.js': 1.66.0
       base64-js: 1.5.1
       bn.js: 5.2.1
@@ -2472,7 +2472,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/borsh@0.2.5(@trezoa/web3.js@1.66.0):
+  /@trezoa-serum/borsh@0.2.5(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-UmeUkUoKdQ7rhx6Leve1SssMR/Ghv8qrEiyywyxSWg7ooV7StdpPBhciiy5eB3T0qU1BXvdRNC8TdrkxK7WC5Q==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -2483,11 +2483,11 @@ packages:
       buffer-layout: 1.2.2
     dev: false
 
-  /@project-serum/serum@0.13.55:
+  /@trezoa-serum/serum@0.13.55:
     resolution: {integrity: sha512-SPQ4NsuNbBJO3mLGnTYbjt47WCXoNIcW2C9xv0gNXyG62dxgONsAEEgErKv1gT34hWCMPsXFSpatnX6ppriq7w==}
     engines: {node: '>=10'}
     dependencies:
-      '@project-serum/anchor': 0.11.1
+      '@trezoa-serum/trezoaanchor': 0.11.1
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
@@ -2498,11 +2498,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/serum@0.13.61:
+  /@trezoa-serum/serum@0.13.61:
     resolution: {integrity: sha512-aebaRGQ0/K7a5kJ9UXO59BAQFJILVu5jbGobU8GD2CTSy6SPceprB6/pgZmZLQIabhXWUHaZRF/wXIClgWataA==}
     engines: {node: '>=10'}
     dependencies:
-      '@project-serum/anchor': 0.11.1
+      '@trezoa-serum/trezoaanchor': 0.11.1
       '@trezoa/tpl-token': 0.1.8
       '@trezoa/web3.js': 1.66.0
       bn.js: 5.2.1
@@ -2513,7 +2513,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@project-serum/trz-wallet-adapter@0.2.6(@trezoa/web3.js@1.66.0):
+  /@trezoa-serum/trz-wallet-adapter@0.2.6(@trezoa/web3.js@1.66.0):
     resolution: {integrity: sha512-cpIb13aWPW8y4KzkZAPDgw+Kb+DXjCC6rZoH74MGm3I/6e/zKyGnfAuW5olb2zxonFqsYgnv7ev8MQnvSgJ3/g==}
     engines: {node: '>=10'}
     peerDependencies:

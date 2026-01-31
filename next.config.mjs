@@ -11,7 +11,7 @@ const nextConfig = {
     remotePatterns: [
       {
         hostname: 'raw.githubusercontent.com',
-        pathname: '/trezoa-labs/token-list/main/assets/**',
+        pathname: '/trezoa-team/token-list/main/assets/**',
         port: '',
         protocol: 'https',
       },
@@ -47,7 +47,7 @@ const nextConfig = {
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      // Fixes npm packages that depend on `fs` module like `@project-serum/anchor`.
+      // Fixes npm packages that depend on `fs` module like `@trezoa-serum/trezoaanchor`.
       config.resolve.fallback.fs = false;
     }
     return config;

@@ -1,10 +1,10 @@
 import { ErrorCard } from '@components/common/ErrorCard';
-import { BorshAccountsCoder } from '@project-serum/anchor';
-import { IdlTypeDef } from '@project-serum/anchor/dist/cjs/idl';
+import { BorshAccountsCoder } from '@trezoa-serum/trezoaanchor';
+import { IdlTypeDef } from '@trezoa-serum/trezoaanchor/dist/cjs/idl';
 import { Account } from '@providers/accounts';
-import { useAnchorProgram } from '@providers/anchor';
+import { useAnchorProgram } from '@providers/trezoaanchor';
 import { useCluster } from '@providers/cluster';
-import { getAnchorProgramName, mapAccountToRows } from '@utils/anchor';
+import { getAnchorProgramName, mapAccountToRows } from '@utils/trezoaanchor';
 import React, { useMemo } from 'react';
 
 export function AnchorAccountCard({ account }: { account: Account }) {

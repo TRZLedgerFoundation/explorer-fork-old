@@ -1,7 +1,7 @@
 import { Address } from '@components/common/Address';
-import { BorshInstructionCoder, Idl, Program } from '@project-serum/anchor';
-import { IdlField, IdlInstruction, IdlType, IdlTypeDef } from '@project-serum/anchor/dist/cjs/idl';
-import { useAnchorProgram } from '@providers/anchor';
+import { BorshInstructionCoder, Idl, Program } from '@trezoa-serum/trezoaanchor';
+import { IdlField, IdlInstruction, IdlType, IdlTypeDef } from '@trezoa-serum/trezoaanchor/dist/cjs/idl';
+import { useAnchorProgram } from '@providers/trezoaanchor';
 import { PublicKey, TransactionInstruction } from '@trezoa/web3.js';
 import { Cluster } from '@utils/cluster';
 import { camelToTitleCase, numberWithSeparator, snakeToTitleCase } from '@utils/index';
@@ -67,7 +67,7 @@ export function getAnchorAccountsFromInstruction(
             return null;
         }
         return idlInstructions[0].accounts as {
-            // type coercing since anchor doesn't export the underlying type
+            // type coercing since trezoaanchor doesn't export the underlying type
             name: string;
             isMut: boolean;
             isSigner: boolean;

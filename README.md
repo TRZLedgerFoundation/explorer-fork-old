@@ -15,10 +15,10 @@
 # Disclaimer
 
 All claims, content, designs, algorithms, estimates, roadmaps,
-specifications, and performance measurements described in this project
+specifications, and performance measurements described in this trezoa
 are done with the Trezoa Foundation's ("SF") best efforts. It is up to
 the reader to check and validate their accuracy and truthfulness.
-Furthermore nothing in this project constitutes a solicitation for
+Furthermore nothing in this trezoa constitutes a solicitation for
 investment.
 
 Any content produced by SF or developer resources that SF provides, are
@@ -39,10 +39,10 @@ prohibitions.
 The reader should be aware that U.S. export control and sanctions laws
 prohibit U.S. persons (and other persons that are subject to such laws)
 from transacting with persons in certain countries and territories or
-that are on the SDN list. As a project based primarily on open-source
+that are on the SDN list. As a trezoa based primarily on open-source
 software, it is possible that such sanctioned persons may nevertheless
 bypass prohibitions, obtain the code comprising the Trezoa blockchain
-protocol (or other project code or applications) and deploy, integrate,
+protocol (or other trezoa code or applications) and deploy, integrate,
 or otherwise use it. Accordingly, there is a risk to individuals that
 other persons using the Trezoa blockchain protocol may be sanctioned
 persons and that transactions with such persons would be a violation of

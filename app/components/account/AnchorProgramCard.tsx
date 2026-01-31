@@ -1,6 +1,6 @@
 'use client';
 
-import { useAnchorProgram } from '@providers/anchor';
+import { useAnchorProgram } from '@providers/trezoaanchor';
 import { useCluster } from '@providers/cluster';
 import ReactJson from 'react-json-view';
 

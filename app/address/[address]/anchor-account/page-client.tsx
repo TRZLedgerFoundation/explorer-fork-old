@@ -20,7 +20,7 @@ function AnchorAccountCardRenderer({
         return onNotFound();
     }
     return (
-        <Suspense fallback={<LoadingCard message="Decoding account data using anchor interface" />}>
+        <Suspense fallback={<LoadingCard message="Decoding account data using trezoaanchor interface" />}>
             <AnchorAccountCard account={account} />
         </Suspense>
     );

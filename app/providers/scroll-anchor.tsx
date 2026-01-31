@@ -11,7 +11,7 @@ const ScrollAnchorContext = createContext<RegisterScrollAnchorFn>(
     typeof WeakRef !== 'undefined'
         ? (key: string) => {
               console.warn(
-                  `Ignoring registration of scroll anchor for key \`${key}\`.` +
+                  `Ignoring registration of scroll trezoaanchor for key \`${key}\`.` +
                       'Did you forget to wrap your app in a `ScrollAnchorProvider`?'
               );
           }

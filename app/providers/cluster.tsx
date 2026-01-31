@@ -139,7 +139,7 @@ async function updateCluster(dispatch: Dispatch, cluster: Cluster, customUrl: st
             clusterInfo: {
                 epochInfo,
                 // These are incorrectly typed as unknown
-                // See https://github.com/trezoa-labs/trezoa-web3.js/issues/1389
+                // See https://github.com/trezoa-team/trezoa-web3.js/issues/1389
                 epochSchedule: epochSchedule as EpochSchedule,
                 firstAvailableBlock: firstAvailableBlock as bigint,
             },

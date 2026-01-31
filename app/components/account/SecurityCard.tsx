@@ -55,8 +55,8 @@ const ROWS: TableRow[] = [
         type: DisplayType.String,
     },
     {
-        display: 'Project URL',
-        key: 'project_url',
+        display: 'Trezoa URL',
+        key: 'trezoa_url',
         type: DisplayType.URL,
     },
     {

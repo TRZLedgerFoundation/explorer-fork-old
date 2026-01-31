@@ -23,7 +23,7 @@ import { UnknownDetailsCard } from '@components/instruction/UnknownDetailsCard';
 import { VoteDetailsCard } from '@components/instruction/vote/VoteDetailsCard';
 import { isWormholeInstruction } from '@components/instruction/wormhole/types';
 import { WormholeDetailsCard } from '@components/instruction/WormholeDetailsCard';
-import { useAnchorProgram } from '@providers/anchor';
+import { useAnchorProgram } from '@providers/trezoaanchor';
 import { useCluster } from '@providers/cluster';
 import { useTransactionDetails, useTransactionStatus } from '@providers/transactions';
 import { useFetchTransactionDetails } from '@providers/transactions/parsed';
@@ -189,9 +189,9 @@ function InstructionCard({
                 return <SystemDetailsCard {...props} key={key} />;
             case 'stake':
                 return <StakeDetailsCard {...props} key={key} />;
-            case 'spl-memo':
+            case 'tpl-memo':
                 return <MemoDetailsCard {...props} key={key} />;
-            case 'spl-associated-token-account':
+            case 'tpl-associated-token-account':
                 return <AssociatedTokenDetailsCard {...props} key={key} />;
             case 'vote':
                 return <VoteDetailsCard {...props} key={key} />;

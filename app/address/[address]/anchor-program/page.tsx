@@ -19,7 +19,7 @@ export async function generateMetadata(props: AddressPageMetadataProps): Promise
 
 export default function AnchorProgramIDLPage({ params: { address } }: Props) {
     return (
-        <Suspense fallback={<LoadingCard message="Loading anchor program IDL" />}>
+        <Suspense fallback={<LoadingCard message="Loading trezoaanchor program IDL" />}>
             <AnchorProgramCard programId={address} />
         </Suspense>
     );

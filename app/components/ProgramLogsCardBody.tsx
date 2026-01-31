@@ -1,8 +1,8 @@
 import { TableCardBody } from '@components/common/TableCardBody';
 import { ParsedMessage, PublicKey, VersionedMessage } from '@trezoa/web3.js';
-import { ProgramName } from '@utils/anchor';
+import { ProgramName } from '@utils/trezoaanchor';
 import { Cluster } from '@utils/cluster';
-import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-anchor-id';
+import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-trezoaanchor-id';
 import { InstructionLogs } from '@utils/program-logs';
 import { useClusterPath } from '@utils/url';
 import Link from 'next/link';

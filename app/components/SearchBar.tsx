@@ -23,7 +23,7 @@ interface SearchOptions {
 }
 
 const hasDomainSyntax = (value: string) => {
-    return value.length > 4 && value.substring(value.length - 4) === '.sol';
+    return value.length > 4 && value.substring(value.length - 4) === '.trz';
 };
 
 export function SearchBar() {

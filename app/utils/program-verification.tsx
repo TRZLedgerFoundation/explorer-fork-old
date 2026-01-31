@@ -67,7 +67,7 @@ export interface AnchorBuild {
 }
 
 /**
- * Returns a verified build from the anchor registry. null if no such
+ * Returns a verified build from the trezoaanchor registry. null if no such
  * verified build exists, e.g., if the program has been upgraded since the
  * last verified build.
  */

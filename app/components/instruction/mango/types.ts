@@ -7,7 +7,7 @@ import {
     PerpMarketLayout,
     SpotMarketConfig,
 } from '@blockworks-foundation/mango-client';
-import { Market } from '@project-serum/serum';
+import { Market } from '@trezoa-serum/serum';
 import { AccountInfo, AccountMeta, Connection, PublicKey, TransactionInstruction } from '@trezoa/web3.js';
 
 // note: mainnet.1 suffices since its a superset of mainnet.0

@@ -1,9 +1,9 @@
 import { HexData } from '@components/common/HexData';
 import { TableCardBody } from '@components/common/TableCardBody';
 import { useCluster } from '@providers/cluster';
-import { useScrollAnchor } from '@providers/scroll-anchor';
+import { useScrollAnchor } from '@providers/scroll-trezoaanchor';
 import { MessageCompiledInstruction, VersionedMessage } from '@trezoa/web3.js';
-import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-anchor-id';
+import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-trezoaanchor-id';
 import { getProgramName } from '@utils/tx';
 import React from 'react';
 

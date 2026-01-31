@@ -2,7 +2,7 @@ import { ProgramDataAccountInfo } from '@validators/accounts/upgradeable-program
 
 export type SecurityTXT = {
     name: string;
-    project_url: string;
+    trezoa_url: string;
     contacts: string;
     policy: string;
     preferred_languages?: string;
@@ -14,10 +14,10 @@ export type SecurityTXT = {
     acknowledgements?: string;
     expiry?: string;
 };
-const REQUIRED_KEYS: (keyof SecurityTXT)[] = ['name', 'project_url', 'contacts', 'policy'];
+const REQUIRED_KEYS: (keyof SecurityTXT)[] = ['name', 'trezoa_url', 'contacts', 'policy'];
 const VALID_KEYS: (keyof SecurityTXT)[] = [
     'name',
-    'project_url',
+    'trezoa_url',
     'contacts',
     'policy',
     'preferred_languages',

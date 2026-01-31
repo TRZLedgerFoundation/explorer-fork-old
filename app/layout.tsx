@@ -6,7 +6,7 @@ import { MessageBanner } from '@components/MessageBanner';
 import { Navbar } from '@components/Navbar';
 import { SearchBar } from '@components/SearchBar';
 import { ClusterProvider } from '@providers/cluster';
-import { ScrollAnchorProvider } from '@providers/scroll-anchor';
+import { ScrollAnchorProvider } from '@providers/scroll-trezoaanchor';
 import { Rubik } from 'next/font/google';
 import { Metadata } from 'next/types';
 

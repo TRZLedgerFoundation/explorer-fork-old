@@ -1,8 +1,8 @@
 import { Address } from '@components/common/Address';
-import { useScrollAnchor } from '@providers/scroll-anchor';
+import { useScrollAnchor } from '@providers/scroll-trezoaanchor';
 import { useFetchRawTransaction, useRawTransactionDetails } from '@providers/transactions/raw';
 import { ParsedInstruction, SignatureResult, TransactionInstruction } from '@trezoa/web3.js';
-import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-anchor-id';
+import getInstructionCardScrollAnchorId from '@utils/get-instruction-card-scroll-trezoaanchor-id';
 import React, { useContext } from 'react';
 import { Code } from 'react-feather';
 

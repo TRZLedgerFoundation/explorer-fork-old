@@ -16,13 +16,13 @@ export interface DomainInfo {
 }
 
 export const hasDomainSyntax = (value: string) => {
-    return value.length > 4 && value.substring(value.length - 4) === '.sol';
+    return value.length > 4 && value.substring(value.length - 4) === '.trz';
 };
 
-// returns non empty wallet string if a given .sol domain is owned by a wallet
+// returns non empty wallet string if a given .trz domain is owned by a wallet
 export async function getDomainInfo(domain: string, connection: Connection) {
     const domainKey = await getDomainKey(
-        domain.slice(0, -4), // remove .sol
+        domain.slice(0, -4), // remove .trz
         undefined,
         TRZ_TLD_AUTHORITY
     );
